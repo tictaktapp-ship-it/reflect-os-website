@@ -24,6 +24,10 @@
   /* Border */
   --border: #2D3748;
 
+  /* Legacy aliases — old variable names still present in HTML */
+  --surface-warm: var(--bg-elevated);
+  --teal: var(--accent);
+
   /* Radius — matches app: 8px inputs/buttons, 12px cards */
   --radius-sm: 6px;
   --radius-md: 8px;
@@ -745,4 +749,5 @@ section { padding: 96px 0; }
 .mt-4 { margin-top: 16px; }
 .mt-8 { margin-top: 32px; }
 .bg-surface { background: var(--bg-surface); }
+.bg-warm    { background: var(--bg-surface); }
 .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
