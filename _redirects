@@ -1,0 +1,20 @@
+# Non-www → www canonical redirect
+https://reflect-os.com/* https://www.reflect-os.com/:splat 301
+
+# Enforce www → non-www (pick one canonical and stick to it)
+# If you prefer www, swap these around
+
+# Clean URL rewrites (optional — Cloudflare Pages handles .html automatically)
+/pricing          /pricing.html          200
+/how-it-works     /how-it-works.html     200
+/about            /about.html            200
+/product          /product.html          200
+/security         /security.html         200
+/use-cases        /use-cases.html        200
+/blog             /blog.html             200
+/contact          /contact.html          200
+/privacy          /privacy.html          200
+/terms            /terms.html            200
+/cookies          /cookies.html          200
+/use-cases/executives             /use-cases/executives.html             200
+/use-cases/investment-management  /use-cases/investment-management.html  200
