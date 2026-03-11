@@ -1,3 +1,6 @@
+# Non-www → www canonical redirect
+https://reflect-os.com/* https://www.reflect-os.com/:splat 301
+
 # Enforce www → non-www (pick one canonical and stick to it)
 # If you prefer www, swap these around
 
