@@ -128,7 +128,7 @@ p  { color: var(--text-secondary); }
 }
 .nav-inner { display: flex; align-items: center; justify-content: space-between; width: 100%; }
 .nav-logo { display: flex; align-items: center; }
-.nav-logo img { max-height: 56px; height: 56px; width: auto; }
+.nav-logo img { max-height: 112px; height: 112px; width: auto; }
 .nav-links { display: flex; align-items: center; gap: 2px; list-style: none; white-space: nowrap; }
 .nav-links a {
   padding: 8px 14px; border-radius: var(--radius-md);
