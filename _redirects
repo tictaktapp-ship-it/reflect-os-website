@@ -1,2 +1,4 @@
-# Non-www → www canonical redirect
+# HTTP → HTTPS + non-www → www canonical redirects
+http://reflect-os.com/* https://www.reflect-os.com/:splat 301
+http://www.reflect-os.com/* https://www.reflect-os.com/:splat 301
 https://reflect-os.com/* https://www.reflect-os.com/:splat 301
