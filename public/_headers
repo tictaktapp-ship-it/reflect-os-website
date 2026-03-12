@@ -8,5 +8,11 @@
 /src/styles/*
   Cache-Control: public, max-age=31536000, immutable
 
+/public/logo.svg
+  Cache-Control: no-cache, must-revalidate
+
+/favicon.svg
+  Cache-Control: no-cache, must-revalidate
+
 /public/*
-  Cache-Control: public, max-age=86400
+  Cache-Control: public, max-age=3600
