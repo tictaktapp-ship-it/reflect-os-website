@@ -18,3 +18,6 @@ https://reflect-os.com/* https://www.reflect-os.com/:splat 301
 /cookies          /cookies.html          200
 /use-cases/executives             /use-cases/executives.html             200
 /use-cases/investment-management  /use-cases/investment-management.html  200
+/blog/investment-committee-process  /blog/investment-committee-process.html  200
+/blog/decision-calibration          /blog/decision-calibration.html          200
+/blog/decision-journal              /blog/decision-journal.html              200
