@@ -8,13 +8,14 @@
 */
 :root {
   /* ── Backgrounds (theme.dart light) ── */
-  --background-primary:  #F5F5F7;   /* scaffoldBackgroundColor */
+  --background-primary:  #F8F9FA;   /* scaffoldBackgroundColor */
   --background-surface:  #FFFFFF;   /* colorScheme.surface / card / appBar */
   --background-elevated: #F0F0F2;   /* inputDecorationTheme.fillColor */
 
   /* ── Accent (tokens.dart AppColors) ── */
-  --accent-primary: #0C99B4;        /* AppColors.accentPrimary */
-  --accent-hover:   #1FCCEF;        /* AppColors.accentHover */
+  --accent-primary: #00BCD4;        /* AppColors.accentPrimary */
+  --accent-hover:   #26C6DA;        /* AppColors.accentHover */
+  --accent-dark:    #0097A7;        /* hover/darker variant */
 
   /* ── Text (theme.dart light) ── */
   --text-primary:   #1A1A2E;        /* colorScheme.onSurface */
@@ -289,7 +290,7 @@ section { padding: 96px 0; }
 .pricing-feature::before {
   content: ''; width: 16px; height: 16px; border-radius: 50%; flex-shrink: 0; margin-top: 1px;
   background-color: rgba(12,153,180,0.12);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230C99B4'%3E%3Cpath d='M6.5 11.5L3 8l1-1 2.5 2.5 5-5 1 1z'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%2300BCD4'%3E%3Cpath d='M6.5 11.5L3 8l1-1 2.5 2.5 5-5 1 1z'/%3E%3C/svg%3E");
   background-size: cover;
 }
 .pricing-cta { width: 100%; margin-top: 24px; justify-content: center; }
