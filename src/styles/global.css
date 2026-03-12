@@ -46,7 +46,7 @@
 
   /* ── Layout ── */
   --max-w: 1280px;
-  --nav-h: 100px;
+  --nav-h: 148px;
 
   /* ── Legacy aliases (HTML inline styles use these old names) ── */
   --surface-warm: var(--background-elevated);
@@ -128,8 +128,11 @@ p  { color: var(--text-secondary); }
 }
 .nav-inner { display: flex; align-items: center; justify-content: space-between; width: 100%; }
 .nav-logo { display: flex; align-items: center; }
-.nav-logo img { height: 72px; width: auto; display: block; }
-@media (max-width: 768px) { .nav-logo img { height: 40px; } }
+.nav-logo img { height: 120px; width: auto; display: block; }
+@media (max-width: 768px) {
+  .nav { height: auto; padding: 14px 0; }
+  .nav-logo img { height: 48px; }
+}
 .nav-links { display: flex; align-items: center; gap: 2px; list-style: none; white-space: nowrap; }
 .nav-links a {
   padding: 8px 14px; border-radius: var(--radius-md);
