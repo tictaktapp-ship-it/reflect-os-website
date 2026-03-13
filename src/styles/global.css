@@ -417,6 +417,89 @@ section { padding: 96px 0; }
 .comparison-check { color: var(--accent-primary); font-size: 1.1rem; font-weight: 600; }
 .comparison-cross { color: var(--text-muted); font-size: 1.1rem; }
 
+/* ── Problem section list ── */
+.problem-list {
+  list-style: none;
+  margin: 24px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.problem-list li {
+  position: relative;
+  padding-left: 28px;
+  color: var(--text-secondary);
+  font-size: 1rem;
+  line-height: 1.65;
+}
+.problem-list li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--accent-primary);
+  font-weight: 600;
+}
+
+/* ── Decision intelligence loop ── */
+.decision-loop {
+  display: flex;
+  align-items: flex-start;
+  gap: 0;
+  margin-top: 64px;
+}
+.loop-step {
+  flex: 1;
+  text-align: center;
+  padding: 32px 24px;
+  border-radius: var(--radius-lg);
+  transition: none;
+}
+.loop-step:hover {
+  transform: none;
+  box-shadow: none;
+  border-color: var(--border-subtle);
+}
+.loop-num {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--accent-primary);
+  line-height: 1;
+  margin-bottom: 14px;
+}
+.loop-step h3 { font-size: 1.05rem; margin-bottom: 10px; }
+.loop-step p  { font-size: 0.875rem; line-height: 1.65; }
+.loop-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--accent-primary);
+  font-size: 1.5rem;
+  padding: 0 12px;
+  padding-top: 52px;
+}
+@media (max-width: 768px) {
+  .decision-loop {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+  .loop-step { width: 100%; }
+  .loop-arrow {
+    padding: 8px 0;
+    padding-top: 8px;
+    font-size: 1.25rem;
+    transform: rotate(90deg);
+    align-self: center;
+  }
+}
+
+/* ── About manifesto ── */
+.about-manifesto { max-width: 680px; }
+.about-manifesto h2 { margin-bottom: 28px; }
+.about-manifesto p  { margin-bottom: 20px; font-size: 1rem; }
+.about-manifesto p:last-child { margin-bottom: 0; }
+
 /* ── Utilities ── */
 .text-center { text-align: center; }
 .text-teal { color: var(--accent-primary); }
