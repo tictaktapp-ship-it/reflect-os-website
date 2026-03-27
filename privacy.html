@@ -65,7 +65,7 @@
     <div class="legal-body">
 
       <h2 id="p1">1. Who we are</h2>
-      <p><strong>Euan Pallister trading as Reflect OS</strong> is the data controller for personal data processed through the Reflect OS service ("Service"). We are based in England and Wales.</p>
+      <p><strong>Euan Pallister trading as Reflect OS</strong> is the data controller for personal data processed through the Reflect OS service ("Service"). We are based in England and Wales. Registered address: Delta House, 1 Edgcumbe Green, St Austell PL25 5EE. Jurisdiction: United Kingdom.</p>
       <p>If you have any questions about how we handle your data, please contact us at <a href="mailto:contact@reflect-os.com" style="color: var(--accent-primary);">contact@reflect-os.com</a>.</p>
 
       <h2 id="p2">2. What personal data we collect and why</h2>
@@ -78,6 +78,7 @@
         <tr><td>Display name</td><td>Personalisation within the Service</td><td>Contract</td></tr>
         <tr><td>Password hash</td><td>Authentication (stored hashed; we never see your plaintext password)</td><td>Contract</td></tr>
         <tr><td>Subscription and billing data</td><td>Processing payments and managing your subscription</td><td>Contract</td></tr>
+        <tr><td>Payment data</td><td>Limited billing information processed via Stripe. We do not store full card details.</td><td>Contract</td></tr>
         <tr><td>Account preferences and settings</td><td>Delivering personalised experience</td><td>Contract</td></tr>
       </table>
 
@@ -102,6 +103,7 @@
         <tr><td>Feature usage logs</td><td>Understanding how the Service is used to improve it</td><td>Legitimate interests</td></tr>
         <tr><td>Error logs and crash reports</td><td>Diagnosing and fixing technical issues</td><td>Legitimate interests</td></tr>
       </table>
+      <p style="font-size:0.875rem;color:var(--text-muted);">Where we rely on legitimate interests, we do so to improve the Service, ensure security, prevent fraud, and enhance user experience, provided such interests do not override your rights.</p>
 
       <h3>2.4 AI interaction data</h3>
       <table>
@@ -148,7 +150,6 @@
         <tr><td>Supabase</td><td>Database, authentication, storage, and serverless Edge Functions</td><td>EU (eu-west-1)</td></tr>
         <tr><td>Stripe</td><td>Payment processing and subscription management</td><td>EU / US (SCCs)</td></tr>
         <tr><td>Anthropic (Claude)</td><td>AI-assisted features (risk, scenario, review)</td><td>US (SCCs, no training)</td></tr>
-        <tr><td>Google (Firebase / Google Cloud)</td><td>Push notifications (mobile app)</td><td>EU / US (SCCs)</td></tr>
         <tr><td>Microsoft (Azure)</td><td>Calendar integration (where you enable it)</td><td>EU / US (SCCs)</td></tr>
         <tr><td>Resend</td><td>Transactional email delivery</td><td>EU</td></tr>
       </table>
@@ -168,6 +169,9 @@
 
       <h3>4.6 We do not sell your data</h3>
       <p>We do not sell, rent, or trade your personal data to any third party for their own marketing or commercial purposes.</p>
+
+      <h3>4.7 Data processor arrangements</h3>
+      <p>Where you use the Service as part of an organisation, your organisation may act as a data controller and Reflect OS acts as a data processor in respect of certain personal data processed within the Service. Please contact us at <a href="mailto:contact@reflect-os.com" style="color: var(--accent-primary);">contact@reflect-os.com</a> if you require a Data Processing Agreement.</p>
 
       <h2 id="p5">5. AI providers and your data</h2>
       <p>AI-assisted features in Reflect OS are powered by <strong>Anthropic Claude</strong> (models including Claude 3.5 Haiku and Claude 3.5 Sonnet). When you use an AI feature, relevant portions of your decision data (such as the decision description and context) are sent to Anthropic's API for processing.</p>
