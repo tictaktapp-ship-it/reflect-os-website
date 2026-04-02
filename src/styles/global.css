@@ -127,11 +127,9 @@ p  { color: var(--text-secondary); }
   transition: background 0.3s;
 }
 .nav-inner { display: flex; align-items: center; justify-content: space-between; width: 100%; }
-.nav-logo { display: flex; align-items: center; }
-.nav-logo img { height: 120px; width: auto; display: block; }
+.site-logo { display: inline-flex; flex-direction: column; align-items: center; text-decoration: none; gap: 2px; }
 @media (max-width: 768px) {
   .nav { height: auto; padding: 14px 0; }
-  .nav-logo img { height: 48px; }
 }
 .nav-links { display: flex; align-items: center; gap: 2px; list-style: none; white-space: nowrap; }
 .nav-links a {
