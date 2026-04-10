@@ -12,6 +12,71 @@
   <meta property="og:url" content="https://www.reflect-os.com" />
   <link rel="canonical" href="https://www.reflect-os.com/" />
   <link rel="stylesheet" href="/src/styles/global.css" />
+  <style>
+    .pricing-anchor {
+      font-size: 13px;
+      color: #7D8494;
+      text-align: center;
+      margin-top: 12px;
+      margin-bottom: 0;
+    }
+    .value-curve-section {
+      padding: 64px 0;
+      background: #fff;
+      border-top: 1px solid var(--border);
+    }
+    .value-curve-section h3 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 1.5rem;
+    }
+    .value-milestones {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      margin-bottom: 32px;
+    }
+    .milestone {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 28px 20px;
+      background: var(--surface-warm);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      gap: 12px;
+    }
+    .milestone-number {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #19CBD6;
+      letter-spacing: -0.01em;
+    }
+    .milestone-text {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      line-height: 1.5;
+    }
+    .value-curve-note {
+      text-align: center;
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      max-width: 560px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+    @media (max-width: 768px) {
+      .value-milestones {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    @media (max-width: 480px) {
+      .value-milestones {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -118,7 +183,8 @@
           <a href="https://app.reflect-os.com/signup" class="btn btn-primary">Get started</a>
           <a href="/how-it-works.html" class="btn btn-outline">See how it works</a>
         </div>
-        <p class="trust-signal fade-up fade-up-4">90-day money-back guarantee. Full refund if it's not right.</p>
+        <p class="pricing-anchor fade-up fade-up-4">From £49/month &nbsp;·&nbsp; <strong>90-day money-back guarantee</strong> &nbsp;·&nbsp; No credit card required to start</p>
+        <p class="trust-signal fade-up fade-up-4">90-day money-back guarantee — full refund if it's not right for you.</p>
         <p class="privacy-signal fade-up fade-up-4">Your decisions are encrypted at rest and never used to train AI models.</p>
         <div class="hero-social-proof fade-up fade-up-4">
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 1l1.8 3.6L14 5.4l-3 2.9.7 4.1L8 10.4l-3.7 2-.7-4.1-3-2.9 4.2-.8z" fill="#d97706"/></svg>
@@ -393,6 +459,32 @@
         </div>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- ── Value curve ── -->
+<section class="value-curve-section">
+  <div class="container">
+    <h3>How quickly does it work?</h3>
+    <div class="value-milestones">
+      <div class="milestone">
+        <span class="milestone-number">Day 1</span>
+        <span class="milestone-text">Log your first decision in under 60 seconds</span>
+      </div>
+      <div class="milestone">
+        <span class="milestone-number">10 decisions</span>
+        <span class="milestone-text">First patterns begin to emerge in your data</span>
+      </div>
+      <div class="milestone">
+        <span class="milestone-number">30 days</span>
+        <span class="milestone-text">Confidence calibration score becomes meaningful</span>
+      </div>
+      <div class="milestone">
+        <span class="milestone-number">90 days</span>
+        <span class="milestone-text">You have a precise, quantified picture of your decision quality</span>
+      </div>
+    </div>
+    <p class="value-curve-note">Most users log their first decision within 5 minutes of signing up. The 90-day guarantee exists because we are confident the pattern data will speak for itself.</p>
   </div>
 </section>
 
