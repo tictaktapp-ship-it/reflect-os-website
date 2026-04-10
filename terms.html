@@ -35,7 +35,10 @@
         <span style="font-family: 'DM Sans', sans-serif; font-size: 21px; font-weight: 500; letter-spacing: 2px; color: #0D1117; line-height: 1; white-space: nowrap;">REFLECT</span>
       </div>
       <span style="font-family: 'DM Sans', sans-serif; font-size: 7px; font-weight: 300; letter-spacing: 2px; color: #19CBD6; text-align: center; align-self: stretch; line-height: 1; white-space: nowrap;">DECISION INTELLIGENCE OS</span>
-    </a><div class="nav-ctas"><a href="https://app.reflect-os.com/signin" class="btn btn-ghost btn-sm">Sign in</a></div></div></nav>
+    </a><div class="nav-ctas"><a href="https://app.reflect-os.com/signin" class="btn btn-ghost btn-sm">Sign in</a></div>
+    <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false" onclick="toggleNav(this)">
+      <span></span><span></span><span></span>
+    </button></div></nav>
 
 <div class="page-hero">
   <div class="container">
@@ -317,4 +320,20 @@
 
 <footer class="footer"><div class="container"><p class="footer-guarantee">90-day money-back guarantee on all plans.</p>
     <div class="footer-bottom"><span>© 2025 Reflect OS.</span><div class="footer-legal"><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a><a href="/cookies.html">Cookies</a></div></div></div></footer>
+<script>
+function toggleNav(btn) {
+  const expanded = btn.getAttribute('aria-expanded') === 'true';
+  btn.setAttribute('aria-expanded', String(!expanded));
+  const links = document.querySelector('.nav-links');
+  if (links) links.classList.toggle('open');
+}
+document.addEventListener('click', function(e) {
+  const links = document.querySelector('.nav-links');
+  const toggle = document.querySelector('.nav-hamburger');
+  if (links && links.classList.contains('open') && toggle && !toggle.contains(e.target) && !links.contains(e.target)) {
+    links.classList.remove('open');
+    toggle.setAttribute('aria-expanded', 'false');
+  }
+});
+</script>
 </body></html>

@@ -450,7 +450,7 @@
 <!-- ── Three pillars ── -->
 <section style="padding: 64px 0; background: var(--surface-warm); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
   <div class="container">
-    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px;">
+    <div class="three-pillars-grid">
       <div style="padding: 40px 48px; border-right: 1px solid var(--border);">
         <div class="section-label">Capture</div>
         <h3 style="margin-bottom: 12px;">Structured logging at the moment of decision</h3>
@@ -750,9 +750,18 @@
 <script>
 function toggleNav(btn) {
   const expanded = btn.getAttribute('aria-expanded') === 'true';
-  btn.setAttribute('aria-expanded', !expanded);
-  // Mobile nav toggle — full implementation in production
+  btn.setAttribute('aria-expanded', String(!expanded));
+  const links = document.querySelector('.nav-links');
+  if (links) links.classList.toggle('open');
 }
+document.addEventListener('click', function(e) {
+  const links = document.querySelector('.nav-links');
+  const toggle = document.querySelector('.nav-hamburger');
+  if (links && links.classList.contains('open') && toggle && !toggle.contains(e.target) && !links.contains(e.target)) {
+    links.classList.remove('open');
+    toggle.setAttribute('aria-expanded', 'false');
+  }
+});
 </script>
 </body>
 </html>

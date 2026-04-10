@@ -49,6 +49,9 @@
     </a>
     <ul class="nav-links"><li><a href="/product.html">Product</a></li><li><a href="/how-it-works.html">How it works</a></li><li><a href="/use-cases.html">Use cases</a></li><li><a href="/pricing.html">Pricing</a></li><li><a href="/security.html">Security</a></li><li><a href="/about.html">About</a></li></ul>
     <div class="nav-ctas"><a href="https://app.reflect-os.com/signin" class="btn btn-ghost btn-sm">Sign in</a><a href="https://app.reflect-os.com/signup" class="btn btn-primary btn-sm">Get started</a></div>
+    <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false" onclick="toggleNav(this)">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </nav>
 
@@ -116,5 +119,21 @@
 
 <footer class="footer"><div class="container"><div class="footer-grid"><div><div class="footer-brand">Reflect OS</div><p class="footer-desc">Decision intelligence for high-stakes teams.</p></div><div class="footer-col"><h5>Product</h5><ul class="footer-links"><li><a href="/product.html">Overview</a></li><li><a href="/how-it-works.html">How it works</a></li><li><a href="/pricing.html">Pricing</a></li></ul></div><div class="footer-col"><h5>Company</h5><ul class="footer-links"><li><a href="/about.html">About</a></li><li><a href="/contact.html">Contact</a></li><li><a href="/privacy.html">Privacy</a></li></ul></div></div><p class="footer-guarantee">90-day money-back guarantee on all plans.</p>
   <div class="footer-bottom"><span>© 2025 Reflect OS.</span><div class="footer-legal"><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a></div></div></div></footer>
+<script>
+function toggleNav(btn) {
+  const expanded = btn.getAttribute('aria-expanded') === 'true';
+  btn.setAttribute('aria-expanded', String(!expanded));
+  const links = document.querySelector('.nav-links');
+  if (links) links.classList.toggle('open');
+}
+document.addEventListener('click', function(e) {
+  const links = document.querySelector('.nav-links');
+  const toggle = document.querySelector('.nav-hamburger');
+  if (links && links.classList.contains('open') && toggle && !toggle.contains(e.target) && !links.contains(e.target)) {
+    links.classList.remove('open');
+    toggle.setAttribute('aria-expanded', 'false');
+  }
+});
+</script>
 </body>
 </html>

@@ -74,6 +74,9 @@
       <a href="https://app.reflect-os.com/signin" class="btn btn-ghost btn-sm">Sign in</a>
       <a href="https://app.reflect-os.com/signup" class="btn btn-primary btn-sm">Get started</a>
     </div>
+    <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false" onclick="toggleNav(this)">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </nav>
 
@@ -238,5 +241,21 @@
     </div>
   </div>
 </footer>
+<script>
+function toggleNav(btn) {
+  const expanded = btn.getAttribute('aria-expanded') === 'true';
+  btn.setAttribute('aria-expanded', String(!expanded));
+  const links = document.querySelector('.nav-links');
+  if (links) links.classList.toggle('open');
+}
+document.addEventListener('click', function(e) {
+  const links = document.querySelector('.nav-links');
+  const toggle = document.querySelector('.nav-hamburger');
+  if (links && links.classList.contains('open') && toggle && !toggle.contains(e.target) && !links.contains(e.target)) {
+    links.classList.remove('open');
+    toggle.setAttribute('aria-expanded', 'false');
+  }
+});
+</script>
 </body>
 </html>
