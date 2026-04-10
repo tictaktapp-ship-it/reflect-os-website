@@ -76,6 +76,149 @@
         grid-template-columns: 1fr;
       }
     }
+
+    /* ── Animated demo preview ── */
+    .demo-label {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #7D8494;
+      text-align: center;
+      margin: 0 0 14px;
+    }
+    .demo-preview {
+      position: relative;
+      min-height: 268px;
+    }
+    @keyframes fadeState {
+      0%      { opacity: 0; }
+      5.56%   { opacity: 1; }
+      27.78%  { opacity: 1; }
+      33.33%  { opacity: 0; }
+      100%    { opacity: 0; }
+    }
+    .demo-state {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      opacity: 0;
+      animation: fadeState 9s infinite both;
+    }
+    .demo-state-1 { animation-delay: 0s; }
+    .demo-state-2 { animation-delay: 3s; }
+    .demo-state-3 { animation-delay: 6s; }
+    .demo-card {
+      background: #0D1117;
+      border: 1px solid #2A2F3A;
+      border-radius: 12px;
+      padding: 20px 24px;
+      color: #E8EAF0;
+    }
+    .demo-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+    .demo-card-title {
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: #F0F2F5;
+    }
+    .demo-badge {
+      font-size: 11px;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 20px;
+      white-space: nowrap;
+    }
+    .demo-badge-active   { background: rgba(25,203,214,0.15); color: #19CBD6; }
+    .demo-badge-reviewed { background: rgba(46,160,115,0.15); color: #2EA073; }
+    .demo-field { margin-bottom: 14px; }
+    .demo-field-label {
+      font-size: 10px;
+      color: #7D8494;
+      margin-bottom: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+    .demo-bar-wrap {
+      height: 6px;
+      background: #1E2330;
+      border-radius: 3px;
+      overflow: hidden;
+      margin-bottom: 5px;
+    }
+    .demo-bar { height: 100%; background: #19CBD6; border-radius: 3px; }
+    .demo-field-meta { font-size: 12px; color: #9BA3B0; }
+    .demo-divider { height: 1px; background: #2A2F3A; margin: 14px 0; }
+    .demo-review-due { font-size: 12px; color: #9BA3B0; }
+    /* State 2 — pattern */
+    .demo-card-pattern { border-color: rgba(217,125,36,0.35); }
+    .demo-pattern-header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+    .demo-amber-dot {
+      width: 8px; height: 8px;
+      background: #D97D24;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+    .demo-pattern-label {
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      color: #D97D24;
+    }
+    .demo-pattern-text {
+      font-size: 0.9rem;
+      line-height: 1.65;
+      color: #C8D0DC;
+      margin: 0 0 16px;
+    }
+    .demo-calibration-gap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 14px;
+      background: rgba(217,125,36,0.08);
+      border: 1px solid rgba(217,125,36,0.2);
+      border-radius: 8px;
+    }
+    .demo-gap-label {
+      font-size: 10px;
+      color: #7D8494;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .demo-gap-value { font-size: 1.1rem; font-weight: 700; color: #D97D24; }
+    /* State 3 — review */
+    .demo-review-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 9px 0;
+      border-bottom: 1px solid #1E2330;
+      font-size: 0.875rem;
+    }
+    .demo-review-label { color: #7D8494; }
+    .demo-review-value { font-weight: 600; color: #E8EAF0; }
+    .demo-partial { color: #D97D24; }
+    .demo-gap-neg { color: #DC4444; }
+    .demo-insight {
+      margin-top: 14px;
+      padding: 10px 14px;
+      background: rgba(220,68,68,0.08);
+      border: 1px solid rgba(220,68,68,0.2);
+      border-radius: 8px;
+      font-size: 0.8rem;
+      color: #DC4444;
+      font-weight: 500;
+    }
   </style>
   <script type="application/ld+json">
   {
@@ -192,45 +335,64 @@
         </div>
       </div>
       <div class="hero-visual" aria-hidden="true">
-        <div class="hero-card-stack">
-          <div class="hero-card hero-card-behind"></div>
-          <div class="hero-card hero-card-main">
-            <div class="mock-header">
-              <div>
-                <div class="mock-title">Series B investment — CloudOps Ltd</div>
-                <div class="mock-meta">Made 14 Jan 2025 · Review due in 47 days</div>
+        <p class="demo-label">Watch how Reflect OS builds intelligence over time</p>
+        <div class="demo-preview">
+
+          <!-- State 1 — Decision logged -->
+          <div class="demo-state demo-state-1">
+            <div class="demo-card">
+              <div class="demo-card-header">
+                <span class="demo-card-title">Expand into US market</span>
+                <span class="demo-badge demo-badge-active">Active</span>
               </div>
-              <div class="mock-status" style="background:#2EA073;color:white;border-color:transparent;">In review</div>
-            </div>
-            <div class="mock-divider"></div>
-            <div class="mock-field">
-              <div class="mock-label">Confidence at time of decision</div>
-              <div class="mock-bar-wrap"><div class="mock-bar" style="width:72%"></div></div>
-              <div class="mock-meta" style="margin-top:4px">72% — moderately confident</div>
-            </div>
-            <div class="mock-field">
-              <div class="mock-label">Risk factors identified</div>
-              <div class="mock-chips">
-                <span class="mock-chip">Market timing</span>
-                <span class="mock-chip">Team depth</span>
-                <span class="mock-chip">Competitive moat</span>
+              <div class="demo-field">
+                <div class="demo-field-label">Confidence at time of decision</div>
+                <div class="demo-bar-wrap"><div class="demo-bar" style="width:75%"></div></div>
+                <div class="demo-field-meta">75% — moderately confident</div>
               </div>
-            </div>
-            <div class="mock-divider"></div>
-            <div class="mock-label" style="margin-bottom:8px">Outcome checkpoints</div>
-            <div class="mock-checkpoint">
-              <div class="mock-dot" style="background:#2EA073"></div>
-              <span>90-day: MRR trajectory — <strong>On track</strong></span>
-            </div>
-            <div class="mock-checkpoint">
-              <div class="mock-dot" style="background:#D97D24"></div>
-              <span>6-month: Team hires — <strong>Pending review</strong></span>
-            </div>
-            <div class="mock-checkpoint">
-              <div class="mock-dot" style="background:#DC4444"></div>
-              <span>12-month: Market position — <em>Not yet due</em></span>
+              <div class="demo-divider"></div>
+              <div class="demo-review-due">Review due: <strong style="color:#19CBD6;">90 days</strong></div>
             </div>
           </div>
+
+          <!-- State 2 — Pattern emerging -->
+          <div class="demo-state demo-state-2">
+            <div class="demo-card demo-card-pattern">
+              <div class="demo-pattern-header">
+                <span class="demo-amber-dot"></span>
+                <span class="demo-pattern-label">Pattern detected</span>
+              </div>
+              <p class="demo-pattern-text">You assign 75–80% confidence to strategic decisions that succeed 52% of the time</p>
+              <div class="demo-calibration-gap">
+                <span class="demo-gap-label">Calibration gap</span>
+                <span class="demo-gap-value">−23%</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- State 3 — Review insight -->
+          <div class="demo-state demo-state-3">
+            <div class="demo-card">
+              <div class="demo-card-header">
+                <span class="demo-card-title">Expand into US market</span>
+                <span class="demo-badge demo-badge-reviewed">Reviewed</span>
+              </div>
+              <div class="demo-review-row">
+                <span class="demo-review-label">Original confidence</span>
+                <span class="demo-review-value">75%</span>
+              </div>
+              <div class="demo-review-row">
+                <span class="demo-review-label">Actual outcome</span>
+                <span class="demo-review-value demo-partial">Partial — 6/10</span>
+              </div>
+              <div class="demo-review-row">
+                <span class="demo-review-label">Calibration gap</span>
+                <span class="demo-review-value demo-gap-neg">−23%</span>
+              </div>
+              <div class="demo-insight">Overconfident on market timing decisions</div>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
