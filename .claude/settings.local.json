@@ -24,7 +24,13 @@
       "Bash(grep -l \"viewport\" E:/reflect-os-website/*.html)",
       "Bash(aria-expanded)",
       "Bash(powershell -Command ':*)",
-      "Bash(powershell -ExecutionPolicy Bypass -File \"E:\\\\reflect-os-website\\\\fix-nav.ps1\")"
+      "Bash(powershell -ExecutionPolicy Bypass -File \"E:\\\\reflect-os-website\\\\fix-nav.ps1\")",
+      "Bash(curl *)",
+      "Bash(ping -n 91 127.0.0.1)",
+      "Bash(ls E:/reflect-os-website/*.html)",
+      "Bash(ls E:/reflect-os-website/use-cases/*.html)",
+      "Bash(xargs grep *)",
+      "Bash(xxd /tmp/test_escape.js)"
     ]
   }
 }
