@@ -9,7 +9,22 @@
       "Bash(xargs ls:*)",
       "Bash(python3:*)",
       "Bash(python:*)",
-      "Bash(where node:*)"
+      "Bash(where node:*)",
+      "Bash(py --version)",
+      "Bash(where py:*)",
+      "Bash(cmd /c \"cd /d E:\\\\reflect-os && py --version\")",
+      "Bash(cmd /c \"where py\")",
+      "Bash(cmd:*)",
+      "Bash(node:*)",
+      "Bash(dart run:*)",
+      "Bash(dart pub:*)",
+      "Bash(git pull:*)",
+      "Bash(dart analyze:*)",
+      "Bash(ls E:/reflect-os-website/blog/*.html)",
+      "Bash(grep -l \"viewport\" E:/reflect-os-website/*.html)",
+      "Bash(aria-expanded)",
+      "Bash(powershell -Command ':*)",
+      "Bash(powershell -ExecutionPolicy Bypass -File \"E:\\\\reflect-os-website\\\\fix-nav.ps1\")"
     ]
   }
 }

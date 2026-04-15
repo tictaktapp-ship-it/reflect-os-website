@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <title>Decision Intelligence Platform | Reflect OS</title>
+  <meta name="description" content="Reflect OS is the decision intelligence platform for executives and investment teams. Capture decisions, log confidence, track outcomes, and eliminate bias systematically." />
+  <link rel="canonical" href="https://www.reflect-os.com/decision-intelligence-platform" />
+  <link rel="stylesheet" href="/src/styles/global.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Reflect OS",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web",
+    "description": "Decision intelligence platform for executives and investment teams. Capture decisions, log confidence, track outcomes, and eliminate bias systematically.",
+    "url": "https://www.reflect-os.com/decision-intelligence-platform"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is a decision intelligence platform?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A decision intelligence platform is software that helps professionals and teams systematically capture decisions at the moment they are made, log their confidence levels, track outcomes over time, and analyse patterns across their decision history. Unlike general-purpose tools, decision intelligence platforms are purpose-built around the closed loop of capture, review, and learning."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How is a decision intelligence platform different from a BI tool?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Business intelligence tools analyse historical data about what has already happened. A decision intelligence platform captures the intent, rationale, and confidence of decisions before outcomes are known — which is the only way to distinguish good decisions from good luck, measure calibration, and improve judgment over time. BI tools answer 'what happened'. Decision intelligence answers 'was this a good decision?'"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What does Reflect OS do?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Reflect OS provides structured decision capture (context, rationale, options considered, confidence level, expected outcome), automated outcome review reminders at 30, 90, and 180 days, confidence calibration tracking across your full decision history, bias and pattern detection, team collaboration with shared decision logs, and an immutable audit trail. It is purpose-built for executives and investment professionals who make high-stakes decisions regularly."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Who uses decision intelligence platforms?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Decision intelligence platforms are primarily used by C-suite executives (CEOs, CFOs, CTOs, COOs), investment managers and fund teams, and senior leadership teams who make consequential decisions regularly. They are particularly valuable in contexts where decisions are complex, outcomes are delayed, and the cost of systematic judgment errors is high."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does decision intelligence reduce cognitive bias?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Decision intelligence reduces cognitive bias through two mechanisms. First, structured capture at the time of decision — before outcomes are known — prevents hindsight bias and forces explicit articulation of reasoning that would otherwise remain implicit. Second, outcome review and calibration tracking make systematic patterns visible over time, allowing decision-makers to see empirically where their judgment is strong and where specific biases are reliably distorting their choices."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is confidence calibration in decision intelligence?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Confidence calibration is the alignment between a decision-maker's stated confidence level and their actual accuracy rate across many decisions. A well-calibrated decision-maker who expresses 75% confidence should be correct approximately 75% of the time. Most professionals are significantly overconfident. Decision intelligence platforms like Reflect OS measure calibration by logging confidence before outcomes are known and comparing it against actual results, creating an empirical feedback loop that improves judgment over time."
+        }
+      }
+    ]
+  }
+  </script>
+  <style>
+    .use-case-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 40px; }
+    @media (max-width: 768px) { .use-case-cards { grid-template-columns: 1fr; } }
+    .use-case-card { display: block; text-decoration: none; background: var(--background-surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 32px 28px; transition: box-shadow 0.15s, border-color 0.15s; }
+    .use-case-card:hover { border-color: var(--accent-primary); box-shadow: 0 4px 20px rgba(25,203,214,0.12); }
+    .use-case-card h3 { color: var(--text-primary); margin-bottom: 10px; font-size: 1.1rem; }
+    .use-case-card p { color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 16px; line-height: 1.6; }
+    .use-case-card .card-link { font-size: 0.85rem; font-weight: 600; color: var(--accent-primary); }
+    .faq-block { max-width: 720px; margin: 0 auto; display: flex; flex-direction: column; gap: 12px; }
+    .faq-item { background: var(--background-surface); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 24px 28px; }
+    .faq-item h3 { font-size: 1rem; color: var(--text-primary); margin-bottom: 10px; font-weight: 600; }
+    .faq-item p { font-size: 0.95rem; color: var(--text-secondary); margin: 0; line-height: 1.7; }
+    .steps-list { display: flex; flex-direction: column; gap: 16px; max-width: 720px; margin: 40px auto 0; }
+    .step-item { display: flex; gap: 20px; align-items: flex-start; background: var(--background-surface); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 24px 28px; }
+    .step-item h4 { color: var(--text-primary); font-size: 1rem; margin-bottom: 6px; }
+    .step-item p { color: var(--text-secondary); font-size: 0.9rem; margin: 0; line-height: 1.6; }
+  </style>
+</head>
+<body>
+<nav class="nav">
+  <div class="container nav-inner">
+    <a href="/" aria-label="Reflect OS home" style="display: inline-flex; flex-direction: column; align-items: center; text-decoration: none; gap: 3px;">
+      <div style="display: flex; flex-direction: row; align-items: center; gap: 10px;">
+        <img src="/favicon.svg" alt="Reflect OS icon" style="height: 30px; width: auto; display: block;">
+        <span style="font-family: 'DM Sans', sans-serif; font-size: 21px; font-weight: 500; letter-spacing: 2px; color: #0D1117; line-height: 1; white-space: nowrap;">REFLECT</span>
+      </div>
+      <span style="font-family: 'DM Sans', sans-serif; font-size: 7px; font-weight: 300; letter-spacing: 2px; color: #19CBD6; text-align: center; align-self: stretch; line-height: 1; white-space: nowrap;">DECISION INTELLIGENCE OS</span>
+    </a>
+    <ul class="nav-links"><li><a href="/product.html">Product</a></li><li><a href="/how-it-works.html">How it works</a></li><li><a href="/use-cases.html">Use cases</a></li><li><a href="/pricing.html">Pricing</a></li><li><a href="/security.html">Security</a></li><li><a href="/about.html">About</a></li></ul>
+    <div class="nav-ctas"><a href="https://app.reflect-os.com/signin" class="btn btn-ghost btn-sm">Sign in</a><a href="https://app.reflect-os.com/signup" class="btn btn-primary btn-sm">Get started</a></div>
+    <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false" onclick="toggleNav(this)">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <div class="container">
+    <div class="section-label">Decision Intelligence Platform</div>
+    <h1 style="max-width: 760px;">The Decision Intelligence Platform for Serious Decision Makers</h1>
+    <p style="max-width: 600px;">Capture decisions the moment you make them. Log your confidence. Track outcomes at 30, 90, and 180 days. See exactly where your judgment is strong — and where it costs you.</p>
+    <div style="margin-top: 32px; display: flex; gap: 12px; flex-wrap: wrap;">
+      <a href="/contact.html" class="btn btn-primary">Request Access</a>
+      <a href="/how-it-works.html" class="btn btn-outline">See How It Works</a>
+    </div>
+  </div>
+</div>
+
+<!-- What is Decision Intelligence -->
+<section>
+  <div class="container" style="max-width: 800px; margin-left: auto; margin-right: auto;">
+    <div class="section-label">The discipline</div>
+    <h2 style="max-width: 640px; margin-bottom: 32px;">What is Decision Intelligence?</h2>
+    <p style="font-size: 1.05rem; line-height: 1.75; color: var(--text-secondary); margin-bottom: 20px;">Decision intelligence is the practice of treating decision-making as a measurable, improvable discipline rather than an innate trait. It combines the systematic capture of decisions at the moment they are made with structured outcome reviews, confidence calibration tracking, and pattern analysis — creating a feedback loop that genuinely improves judgment over time.</p>
+    <p style="font-size: 1.05rem; line-height: 1.75; color: var(--text-secondary); margin-bottom: 20px;">Most professionals have no mechanism for learning from their decisions. They remember outcomes selectively, attribute successes to skill and failures to circumstance, and rarely revisit the assumptions they held at the time a decision was made. Without a structured record, experience compounds into stronger biases rather than better judgment. With one, the opposite happens.</p>
+    <p style="font-size: 1.05rem; line-height: 1.75; color: var(--text-secondary); margin-bottom: 0;">A decision intelligence platform is the infrastructure layer that makes this possible at scale — not as a manual discipline requiring sustained personal effort, but as a systematic process that runs alongside the decisions you are already making, capturing and surfacing what matters without creating meaningful overhead.</p>
+  </div>
+</section>
+
+<!-- Who Uses It -->
+<section style="background: var(--surface-warm); border-top: 1px solid var(--border);">
+  <div class="container">
+    <div class="section-label">Use cases</div>
+    <h2 style="margin-bottom: 8px;">Who Uses a Decision Intelligence Platform?</h2>
+    <p style="color: var(--text-secondary); max-width: 560px;">Reflect OS is built for professionals whose decisions have significant, lasting consequences and whose judgment directly determines organisational outcomes.</p>
+    <div class="use-case-cards">
+      <a href="/use-cases/executives.html" class="use-case-card">
+        <div style="width: 44px; height: 44px; background: linear-gradient(135deg, #E8F4F7, #C0E4ED); border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#19CBD6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </div>
+        <h3>Executives &amp; C-Suite</h3>
+        <p>CEOs, CFOs, CTOs, and COOs making 30–70 significant decisions a week. Build a personal calibration record, surface systematic patterns, and make better decisions with the same information.</p>
+        <span class="card-link">See executive use case →</span>
+      </a>
+      <a href="/use-cases/investment-management.html" class="use-case-card">
+        <div style="width: 44px; height: 44px; background: linear-gradient(135deg, #E8F4F7, #C0E4ED); border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#19CBD6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+        </div>
+        <h3>Investment Teams</h3>
+        <p>Portfolio managers, investment analysts, and fund teams tracking thesis quality, investment committee process, and calibration across the full portfolio cycle.</p>
+        <span class="card-link">See investment use case →</span>
+      </a>
+      <a href="/use-cases.html" class="use-case-card">
+        <div style="width: 44px; height: 44px; background: linear-gradient(135deg, #E8F4F7, #C0E4ED); border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#19CBD6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+        </div>
+        <h3>Leadership Teams</h3>
+        <p>Senior leadership teams and boards who want shared decision logs, structured dissent records, and team-level calibration data that makes group decision quality visible and improvable.</p>
+        <span class="card-link">See all use cases →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Core Features -->
+<section>
+  <div class="container">
+    <div class="section-label">Core capabilities</div>
+    <h2 style="max-width: 560px; margin-bottom: 48px;">Six Capabilities That Define a Serious Platform</h2>
+    <div class="features-grid">
+      <div class="card feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+        </div>
+        <h3>Decision Capture</h3>
+        <p>Structured capture of the decision summary, context, options considered, chosen option, and rationale — in under 90 seconds. Fast enough to use consistently, structured enough to be useful at review.</p>
+      </div>
+      <div class="card feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <h3>Confidence Logging</h3>
+        <p>Log a 0–100% confidence level with every decision. The raw material for calibration analysis — comparing stated confidence against outcome accuracy across your full decision history.</p>
+      </div>
+      <div class="card feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        </div>
+        <h3>Outcome Tracking</h3>
+        <p>Automated review reminders at 30, 90, and 180 days. Surface the original record — exactly as it was written — alongside a structured prompt to record what actually happened and what you learned.</p>
+      </div>
+      <div class="card feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <h3>Bias Detection</h3>
+        <p>After sufficient history, surface systematic patterns: categories where confidence is miscalibrated, decision types with consistently poor outcomes, and situational correlations with decision quality.</p>
+      </div>
+      <div class="card feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+        </div>
+        <h3>Team Collaboration</h3>
+        <p>Shared decision logs, team calibration dashboards, structured dissent recording, and role assignment for group decisions. Make team decision quality visible and improvable.</p>
+      </div>
+      <div class="card feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3>Audit Trail</h3>
+        <p>Immutable, timestamped decision records. Every entry is permanently dated to the moment of capture with no ability to retroactively alter the original rationale. Essential for regulated industries.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- How It Works -->
+<section style="background: var(--surface-warm); border-top: 1px solid var(--border);">
+  <div class="container">
+    <div class="section-label">The process</div>
+    <h2 style="text-align: center; margin-bottom: 0;">How It Works</h2>
+    <p style="text-align: center; color: var(--text-secondary); margin-top: 12px; max-width: 520px; margin-left: auto; margin-right: auto;">Four steps from first decision to measurable improvement. Each step takes less time than the one before it.</p>
+    <div class="steps-list">
+      <div class="step-item">
+        <div class="hiw-num" style="width: 48px; height: 48px; font-size: 1rem; flex-shrink: 0;">1</div>
+        <div>
+          <h4>Log a decision in under 90 seconds</h4>
+          <p>A structured form prompts you for the decision summary, the context, the options you considered and rejected, the chosen option, your confidence level, and the expected outcome. Everything captured before the outcome is known.</p>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="hiw-num" style="width: 48px; height: 48px; font-size: 1rem; flex-shrink: 0;">2</div>
+        <div>
+          <h4>Receive review reminders at the right time</h4>
+          <p>Reflect OS automatically schedules review prompts at 30, 90, and 180 days — or at a custom interval you set. Each reminder surfaces the original record so you are comparing reality against what you actually believed, not your memory of it.</p>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="hiw-num" style="width: 48px; height: 48px; font-size: 1rem; flex-shrink: 0;">3</div>
+        <div>
+          <h4>Record outcomes and lessons at review</h4>
+          <p>At each review, log what actually happened and write one sentence about what, if anything, you would do differently. This takes three minutes and produces the feedback that drives all subsequent analysis.</p>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="hiw-num" style="width: 48px; height: 48px; font-size: 1rem; flex-shrink: 0;">4</div>
+        <div>
+          <h4>Analyse patterns and calibration over time</h4>
+          <p>After 30 decisions, patterns begin to emerge. After 100, calibration data becomes meaningful. After 300, you have a precise, empirically grounded picture of where your judgment is strong and where it systematically fails — and you can act on it.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Comparison Table -->
+<section>
+  <div class="container" style="max-width: 780px; margin-left: auto; margin-right: auto;">
+    <div class="section-label">How it compares</div>
+    <h2 style="margin-bottom: 12px;">How Does Reflect OS Compare?</h2>
+    <p style="color: var(--text-secondary); margin-bottom: 40px;">Spreadsheets store decisions. Note-taking apps remember them. Reflect OS closes the loop — capture, review, calibration, and pattern detection in one purpose-built system.</p>
+    <div style="overflow-x: auto;">
+      <table class="comparison-table">
+        <thead>
+          <tr>
+            <th></th>
+            <th class="col-reflect">Reflect OS</th>
+            <th>Spreadsheets</th>
+            <th>Note-taking Apps</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Structured decision capture form</td>
+            <td><span class="comparison-check">✓</span></td>
+            <td><span class="comparison-cross">—</span></td>
+            <td><span class="comparison-cross">—</span></td>
+          </tr>
+          <tr>
+            <td>Confidence level logging</td>
+            <td><span class="comparison-check">✓</span></td>
+            <td><span class="comparison-cross">—</span></td>
+            <td><span class="comparison-cross">—</span></td>
+          </tr>
+          <tr>
+            <td>Automated outcome review reminders</td>
+            <td><span class="comparison-check">✓</span></td>
+            <td><span class="comparison-cross">—</span></td>
+            <td><span class="comparison-cross">—</span></td>
+          </tr>
+          <tr>
+            <td>Calibration tracking over time</td>
+            <td><span class="comparison-check">✓</span></td>
+            <td><span class="comparison-cross">—</span></td>
+            <td><span class="comparison-cross">—</span></td>
+          </tr>
+          <tr>
+            <td>Bias and pattern detection</td>
+            <td><span class="comparison-check">✓</span></td>
+            <td><span class="comparison-cross">—</span></td>
+            <td><span class="comparison-cross">—</span></td>
+          </tr>
+          <tr>
+            <td>Team collaboration and shared logs</td>
+            <td><span class="comparison-check">✓</span></td>
+            <td><span class="comparison-cross">—</span></td>
+            <td><span class="comparison-cross">—</span></td>
+          </tr>
+          <tr>
+            <td>Immutable audit trail</td>
+            <td><span class="comparison-check">✓</span></td>
+            <td><span class="comparison-cross">—</span></td>
+            <td><span class="comparison-cross">—</span></td>
+          </tr>
+          <tr>
+            <td>General-purpose storage</td>
+            <td><span class="comparison-check">✓</span></td>
+            <td><span class="comparison-check">✓</span></td>
+            <td><span class="comparison-check">✓</span></td>
+          </tr>
+          <tr>
+            <td>Purpose-built for decision intelligence</td>
+            <td><span class="comparison-check">✓</span></td>
+            <td><span class="comparison-cross">—</span></td>
+            <td><span class="comparison-cross">—</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section style="background: var(--surface-warm); border-top: 1px solid var(--border);">
+  <div class="container">
+    <div class="section-label">FAQ</div>
+    <h2 style="text-align: center; margin-bottom: 40px;">Frequently Asked Questions</h2>
+    <div class="faq-block">
+      <div class="faq-item">
+        <h3>What is a decision intelligence platform?</h3>
+        <p>A decision intelligence platform is software that helps professionals and teams systematically capture decisions at the moment they are made, log their confidence levels, track outcomes over time, and analyse patterns across their decision history. Unlike general-purpose tools, decision intelligence platforms are purpose-built around the closed loop of capture, review, and learning — the three steps that transform a record of decisions into a system for improving judgment.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How is a decision intelligence platform different from a BI tool?</h3>
+        <p>Business intelligence tools analyse historical data about what has already happened. A decision intelligence platform captures the intent, rationale, and confidence of decisions before outcomes are known — which is the only way to distinguish good decisions from good luck, measure calibration, and improve judgment over time. BI tools answer "what happened?" Decision intelligence answers "was this a good decision, and am I improving?"</p>
+      </div>
+      <div class="faq-item">
+        <h3>What does Reflect OS do?</h3>
+        <p>Reflect OS provides structured decision capture (context, rationale, options considered, confidence level, expected outcome), automated outcome review reminders at 30, 90, and 180 days, confidence calibration tracking across your full decision history, bias and pattern detection, team collaboration with shared decision logs, and an immutable audit trail. It is purpose-built for executives and investment professionals who make high-stakes decisions regularly and want a systematic way to get better at it.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Who uses decision intelligence platforms?</h3>
+        <p>Decision intelligence platforms are primarily used by C-suite executives (CEOs, CFOs, CTOs, COOs), investment managers and fund teams, and senior leadership teams who make consequential decisions regularly. They are particularly valuable in contexts where decisions are complex, outcomes are delayed, and the cost of systematic judgment errors is high — exactly the conditions under which intuition alone is least reliable.</p>
+      </div>
+      <div class="faq-item">
+        <h3>How does decision intelligence reduce cognitive bias?</h3>
+        <p>Decision intelligence reduces cognitive bias through two mechanisms. First, structured capture at the time of decision — before outcomes are known — prevents hindsight bias and forces explicit articulation of reasoning that would otherwise remain implicit and unexamined. Second, outcome review and calibration tracking make systematic patterns visible over time, allowing decision-makers to see empirically where their judgment is strong and where specific biases are reliably distorting their choices. Knowing about biases does not reduce them; seeing your own specific patterns in your own data does.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What is confidence calibration in decision intelligence?</h3>
+        <p>Confidence calibration is the alignment between a decision-maker's stated confidence level and their actual accuracy rate across many decisions. A well-calibrated decision-maker who expresses 75% confidence should be correct approximately 75% of the time. Most professionals are significantly overconfident — their stated confidence exceeds their actual accuracy by 15–30 percentage points. Reflect OS measures calibration by logging confidence before outcomes are known and comparing it against actual results at review, creating an empirical feedback loop that makes the gap visible and closes it over time.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Bottom CTA -->
+<section>
+  <div class="container">
+    <div class="cta-banner">
+      <h2>Ready to improve your decision quality?</h2>
+      <p>Join executives and investment teams using Reflect OS to build a measurable track record of sound judgment. 90-day money-back guarantee.</p>
+      <div class="cta-banner-actions">
+        <a href="/contact.html" class="btn btn-white">Request Access</a>
+        <a href="/pricing.html" class="btn btn-ghost">View pricing</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer"><div class="container"><div class="footer-grid"><div><div class="footer-brand">Reflect OS</div><p class="footer-desc">Decision intelligence for high-stakes teams.</p></div><div class="footer-col"><h5>Product</h5><ul class="footer-links"><li><a href="/how-it-works.html">How it works</a></li><li><a href="/pricing.html">Pricing</a></li><li><a href="/security.html">Security</a></li></ul></div><div class="footer-col"><h5>Company</h5><ul class="footer-links"><li><a href="/about.html">About</a></li><li><a href="/contact.html">Contact</a></li><li><a href="/privacy.html">Privacy</a></li></ul></div></div><p class="footer-guarantee">90-day money-back guarantee on all plans.</p><div class="footer-bottom"><span>© 2025 Reflect OS.</span><div class="footer-legal"><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a><a href="/cookies.html">Cookies</a></div></div></div></footer>
+<script>
+function toggleNav(btn) {
+  const expanded = btn.getAttribute('aria-expanded') === 'true';
+  btn.setAttribute('aria-expanded', String(!expanded));
+  const links = document.querySelector('.nav-links');
+  if (links) links.classList.toggle('open');
+}
+document.addEventListener('click', function(e) {
+  const links = document.querySelector('.nav-links');
+  const toggle = document.querySelector('.nav-hamburger');
+  if (links && links.classList.contains('open') && toggle && !toggle.contains(e.target) && !links.contains(e.target)) {
+    links.classList.remove('open');
+    toggle.setAttribute('aria-expanded', 'false');
+  }
+});
+</script>
+</body>
+</html>

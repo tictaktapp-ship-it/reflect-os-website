@@ -3,7 +3,22 @@ http://reflect-os.com/* https://www.reflect-os.com/:splat 301
 http://www.reflect-os.com/* https://www.reflect-os.com/:splat 301
 https://reflect-os.com/* https://www.reflect-os.com/:splat 301
 
+# Hub page clean URL rewrite
+/decision-intelligence-platform /decision-intelligence-platform.html 200
+
 # Blog clean URL rewrites
 /blog/investment-committee-process /blog/investment-committee-process.html 200
 /blog/decision-calibration /blog/decision-calibration.html 200
 /blog/decision-journal /blog/decision-journal.html 200
+/blog/decision-intelligence-software-guide /blog/decision-intelligence-software-guide.html 200
+/blog/decision-intelligence-for-executives /blog/decision-intelligence-for-executives.html 200
+/blog/investment-decision-intelligence /blog/investment-decision-intelligence.html 200
+/blog/what-is-cognitive-bias-in-decision-making /blog/what-is-cognitive-bias-in-decision-making.html 200
+/blog/decision-making-framework /blog/decision-making-framework.html 200
+/blog/team-decision-making /blog/team-decision-making.html 200
+/blog/decision-log-template /blog/decision-log-template.html 200
+/blog/overconfidence-bias /blog/overconfidence-bias.html 200
+/blog/second-order-thinking /blog/second-order-thinking.html 200
+/blog/investment-committee-best-practices /blog/investment-committee-best-practices.html 200
+/blog/how-to-improve-decision-making /blog/how-to-improve-decision-making.html 200
+/blog/decision-fatigue /blog/decision-fatigue.html 200
