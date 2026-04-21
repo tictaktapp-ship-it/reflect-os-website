@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Core pages -->
   <url><loc>https://www.reflect-os.com/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
   <url><loc>https://www.reflect-os.com/product</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://www.reflect-os.com/how-it-works</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
@@ -9,14 +10,52 @@
   <url><loc>https://www.reflect-os.com/use-cases/executives</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.reflect-os.com/use-cases/investment-management</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.reflect-os.com/about</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.reflect-os.com/blog</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.reflect-os.com/blog/why-good-decision-makers-keep-a-record</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.reflect-os.com/blog/confidence-calibration-what-it-means-and-why-it-matters</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.reflect-os.com/blog/investment-committee-process</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.reflect-os.com/blog/decision-calibration</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.reflect-os.com/blog/decision-journal</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.reflect-os.com/blog</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <!-- GEO / definitional hub pages -->
+  <url><loc>https://www.reflect-os.com/faq</loc><lastmod>2026-04-21</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.reflect-os.com/what-is-decision-intelligence</loc><lastmod>2026-04-21</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.reflect-os.com/what-is-a-personal-operating-system</loc><lastmod>2026-04-21</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.reflect-os.com/alternatives</loc><lastmod>2026-04-21</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <!-- Legal -->
   <url><loc>https://www.reflect-os.com/contact</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
   <url><loc>https://www.reflect-os.com/privacy</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
   <url><loc>https://www.reflect-os.com/terms</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
   <url><loc>https://www.reflect-os.com/cookies</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <!-- Blog: Decision intelligence & calibration -->
+  <url><loc>https://www.reflect-os.com/blog/what-is-decision-intelligence</loc><lastmod>2026-04-21</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.reflect-os.com/blog/confidence-calibration-what-it-means-and-why-it-matters</loc><lastmod>2026-04-21</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.reflect-os.com/blog/confidence-calibration-the-skill-that-separates-good-leaders</loc><lastmod>2026-04-21</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.reflect-os.com/blog/decision-calibration</loc><lastmod>2026-04-21</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.reflect-os.com/blog/decision-making-framework</loc><lastmod>2026-04-21</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.reflect-os.com/blog/how-to-improve-decision-making</loc><lastmod>2026-04-21</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.reflect-os.com/blog/decision-intelligence-tools-comparison</loc><lastmod>2026-04-21</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.reflect-os.com/blog/decision-intelligence-software-guide</loc><lastmod>2026-04-21</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.reflect-os.com/blog/decision-intelligence-for-executives</loc><lastmod>2026-04-21</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <!-- Blog: Decision journals & logs -->
+  <url><loc>https://www.reflect-os.com/blog/how-to-build-a-decision-journal</loc><lastmod>2026-04-21</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.reflect-os.com/blog/decision-journal</loc><lastmod>2026-04-21</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.reflect-os.com/blog/decision-log-template</loc><lastmod>2026-04-21</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.reflect-os.com/blog/why-good-decision-makers-keep-a-record</loc><lastmod>2026-04-21</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <!-- Blog: Cognitive biases -->
+  <url><loc>https://www.reflect-os.com/blog/overconfidence-bias</loc><lastmod>2026-04-21</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.reflect-os.com/blog/cognitive-bias-business-decisions</loc><lastmod>2026-04-21</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.reflect-os.com/blog/what-is-cognitive-bias-in-decision-making</loc><lastmod>2026-04-21</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.reflect-os.com/blog/5-decision-making-biases-that-cost-executives-the-most</loc><lastmod>2026-04-21</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.reflect-os.com/blog/cognitive-bias-decision-making</loc><lastmod>2026-04-21</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <!-- Blog: Decision science & forecasting -->
+  <url><loc>https://www.reflect-os.com/blog/how-to-make-better-predictions</loc><lastmod>2026-04-21</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.reflect-os.com/blog/second-order-thinking</loc><lastmod>2026-04-21</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.reflect-os.com/blog/decision-fatigue</loc><lastmod>2026-04-21</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <!-- Blog: Team & group decisions -->
+  <url><loc>https://www.reflect-os.com/blog/team-decision-making</loc><lastmod>2026-04-21</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.reflect-os.com/blog/group-decision-making-tools</loc><lastmod>2026-04-21</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <!-- Blog: Comparisons -->
+  <url><loc>https://www.reflect-os.com/blog/reflect-os-vs-notion</loc><lastmod>2026-04-21</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.reflect-os.com/blog/reflect-os-vs-obsidian</loc><lastmod>2026-04-21</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <!-- Blog: Investment decisions -->
+  <url><loc>https://www.reflect-os.com/blog/investment-decision-framework</loc><lastmod>2026-04-21</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.reflect-os.com/blog/investment-decision-intelligence</loc><lastmod>2026-04-21</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.reflect-os.com/blog/investment-committee-process</loc><lastmod>2026-04-21</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.reflect-os.com/blog/investment-committee-best-practices</loc><lastmod>2026-04-21</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.reflect-os.com/blog/how-investment-managers-track-and-review-decisions</loc><lastmod>2026-04-21</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
 </urlset>

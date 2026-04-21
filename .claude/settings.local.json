@@ -30,7 +30,12 @@
       "Bash(ls E:/reflect-os-website/*.html)",
       "Bash(ls E:/reflect-os-website/use-cases/*.html)",
       "Bash(xargs grep *)",
-      "Bash(xxd /tmp/test_escape.js)"
+      "Bash(xxd /tmp/test_escape.js)",
+      "Read(//e//**)",
+      "Read(//mnt/**)",
+      "Read(//e/reflect-os//**)",
+      "Read(//e/reflect-os/**)",
+      "Bash(flutter analyze *)"
     ]
   }
 }

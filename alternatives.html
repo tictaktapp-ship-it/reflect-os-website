@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <title>Reflect OS Alternatives and Comparisons | Reflect OS</title>
+  <meta name="description" content="How does Reflect OS compare to Notion, Obsidian, spreadsheets, and physical journals for decision tracking? Honest comparison across five criteria." />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Reflect OS" />
+  <meta property="og:title" content="Reflect OS Alternatives and Comparisons" />
+  <meta property="og:description" content="How does Reflect OS compare to Notion, Obsidian, spreadsheets, and physical journals for decision tracking? Honest comparison across five criteria." />
+  <meta property="og:url" content="https://www.reflect-os.com/alternatives" />
+  <meta property="og:image" content="https://www.reflect-os.com/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@reflectos" />
+  <meta name="twitter:title" content="Reflect OS Alternatives and Comparisons" />
+  <meta name="twitter:description" content="How does Reflect OS compare to Notion, Obsidian, spreadsheets, and physical journals for decision tracking? Honest comparison across five criteria." />
+  <meta name="twitter:image" content="https://www.reflect-os.com/og-image.png" />
+  <link rel="canonical" href="https://www.reflect-os.com/alternatives" />
+  <link rel="stylesheet" href="/src/styles/global.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the best alternative to Reflect OS?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The best alternative to Reflect OS depends on your requirements. For maximum flexibility and customisation, Notion or Obsidian with a decision journal template can work. For low-cost basic tracking, a spreadsheet is viable. For a physical practice, a paper journal is an option. None of these alternatives provide automated review scheduling, native confidence calibration analysis, or field-level encryption — the core capabilities that distinguish purpose-built decision intelligence software."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I use Notion for decision tracking instead of Reflect OS?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, Notion can be configured for decision tracking using templates and databases. It handles basic decision logging well. However, Notion provides no automated review scheduling, no native calibration analysis, and no field-level encryption appropriate for sensitive executive decisions. For users who primarily need a structured decision log without analytics, Notion is a reasonable starting point. For users who need calibration tracking and automated reviews, Reflect OS is purpose-built for those requirements."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is a spreadsheet good enough for decision tracking?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A spreadsheet works for initial experimentation with decision logging. It breaks down at scale for three reasons: no automated review scheduling (so reviews happen rarely), no calibration analysis without significant manual effort, and no appropriate encryption for sensitive content. A spreadsheet is better than nothing but meaningfully inferior to purpose-built tools for any serious decision intelligence practice."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does Reflect OS compare to Obsidian for decision journaling?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Obsidian is an excellent note-taking and knowledge management tool. It can be configured for decision journaling with plugins and templates. However, it runs locally on your device, which creates sync challenges for mobile capture; it provides no native automated review scheduling; and it has no calibration analysis capability. Reflect OS is cloud-based, mobile-first, and purpose-built for the decision review cycle that Obsidian cannot automate."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What makes Reflect OS different from general decision tracking tools?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Reflect OS is built specifically for the decision intelligence use case — not as a general-purpose tool with decision tracking bolted on. The key differences are: (1) a four-field capture flow designed for under-60-second mobile capture; (2) automated review scheduling with prompts at 30, 90, and 180 days; (3) native confidence calibration analysis across decision categories; and (4) AES-256 field-level encryption appropriate for sensitive executive and investment decisions."
+        }
+      }
+    ]
+  }
+  </script>
+  <style>
+    .article-body { max-width: 860px; margin: 0 auto; }
+    .article-body h2 { margin: 48px 0 16px; }
+    .article-body h3 { margin: 28px 0 10px; }
+    .article-body p { margin-bottom: 18px; font-size: 1.02rem; line-height: 1.75; color: var(--text-secondary); }
+    .article-body strong { color: var(--text-primary); }
+    .comparison-table { width: 100%; border-collapse: collapse; margin: 32px 0; font-size: 0.88rem; overflow-x: auto; display: block; }
+    .comparison-table th { background: var(--surface-warm); padding: 10px 12px; text-align: center; border: 1px solid var(--border); font-weight: 600; color: var(--text-primary); white-space: nowrap; }
+    .comparison-table th:first-child { text-align: left; }
+    .comparison-table td { padding: 9px 12px; border: 1px solid var(--border); color: var(--text-secondary); text-align: center; }
+    .comparison-table td:first-child { text-align: left; font-weight: 500; color: var(--text-primary); }
+    .comparison-table tr:nth-child(even) td { background: #fafafa; }
+    .comparison-table .yes { color: #22c55e; font-weight: 700; }
+    .comparison-table .no { color: #ef4444; }
+    .comparison-table .partial { color: #d97706; }
+    .comparison-table .reflect-col { color: var(--teal); font-weight: 700; }
+    .alternative-card { background: #fff; border: 1px solid var(--border); border-radius: var(--radius-md); padding: 24px 28px; margin: 20px 0; }
+    .alternative-card h3 { margin: 0 0 8px; font-size: 1rem; color: var(--text-primary); }
+    .alternative-card .verdict { font-size: 0.78rem; font-weight: 700; letter-spacing: 1px; color: var(--teal); text-transform: uppercase; margin-bottom: 10px; }
+    .alternative-card p { margin: 0; font-size: 0.9rem; color: var(--text-secondary); }
+    .faq-section { margin-top: 52px; }
+    .faq-item { border-top: 1px solid var(--border); padding: 20px 0; }
+    .faq-item h3 { margin: 0 0 10px; font-size: 1rem; color: var(--text-primary); }
+    .faq-item p { margin: 0; font-size: 0.95rem; color: var(--text-secondary); line-height: 1.7; }
+    .page-cta { margin-top: 52px; padding: 32px; background: var(--surface-warm); border: 1px solid var(--border); border-radius: var(--radius-lg); text-align: center; }
+    .page-cta h2 { margin-bottom: 12px; font-size: 1.3rem; }
+    .page-cta p { margin-bottom: 24px; color: var(--text-secondary); }
+  </style>
+  <script>(function (w, d, s, p, t) { w.gr = w.gr || function () { w.gr.ce = 60; w.gr.q = w.gr.q || []; w.gr.q.push(arguments); }; p = d.getElementsByTagName(s)[0]; t = d.createElement(s); t.async = true; t.src = "https://script.getreditus.com/v2.js"; p.parentNode.insertBefore(t, p); })(window, document, "script"); gr("initCustomer", "dead4d4b-98f0-4f26-824e-f8d02b5e856b"); gr("track", "pageview");</script>
+</head>
+<body>
+<nav class="nav">
+  <div class="container nav-inner">
+    <a href="/" aria-label="Reflect OS home" style="display: inline-flex; flex-direction: column; align-items: center; text-decoration: none; gap: 3px;">
+      <div style="display: flex; flex-direction: row; align-items: center; gap: 10px;">
+        <img src="/favicon.svg" alt="Reflect OS icon" style="height: 30px; width: auto; display: block;">
+        <span style="font-family: 'DM Sans', sans-serif; font-size: 21px; font-weight: 500; letter-spacing: 2px; color: #0D1117; line-height: 1; white-space: nowrap;">REFLECT</span>
+      </div>
+      <span style="font-family: 'DM Sans', sans-serif; font-size: 7px; font-weight: 300; letter-spacing: 2px; color: #19CBD6; text-align: center; align-self: stretch; line-height: 1; white-space: nowrap;">DECISION INTELLIGENCE OS</span>
+    </a>
+    <ul class="nav-links"><li><a href="/product">Product</a></li><li><a href="/how-it-works">How it works</a></li><li><a href="/use-cases">Use cases</a></li><li><a href="/pricing">Pricing</a></li><li><a href="/security">Security</a></li><li><a href="/about">About</a></li></ul>
+    <div class="nav-ctas"><a href="https://app.reflect-os.com/signin" class="btn btn-ghost btn-sm">Sign in</a><a href="https://app.reflect-os.com/signup" class="btn btn-primary btn-sm">Get started</a></div>
+    <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false" onclick="toggleNav(this)">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <div class="container">
+    <h1>Reflect OS Alternatives and Comparisons</h1>
+    <p style="margin-top: 12px; max-width: 600px; color: var(--text-secondary);">An honest comparison of Reflect OS against Notion, Obsidian, spreadsheets, and physical journals for decision tracking.</p>
+  </div>
+</div>
+
+<section style="padding-top: 48px; padding-bottom: 96px;">
+  <div class="container">
+    <div class="article-body">
+
+      <p>Reflect OS is purpose-built for decision intelligence — a category that sits at the intersection of decision logging, calibration analysis, and structured outcome review. The tools most often considered as alternatives were not built for this use case. This comparison covers what each tool does well and where it breaks down for decision tracking specifically.</p>
+
+      <h2>Full feature comparison</h2>
+
+      <table class="comparison-table">
+        <thead>
+          <tr>
+            <th style="min-width: 180px;"></th>
+            <th style="min-width: 120px; color: var(--teal);">Reflect OS</th>
+            <th style="min-width: 100px;">Notion</th>
+            <th style="min-width: 100px;">Obsidian</th>
+            <th style="min-width: 120px;">Spreadsheet</th>
+            <th style="min-width: 100px;">Journal</th>
+            <th style="min-width: 130px;">Project mgmt</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Fast mobile capture (&lt;60s)</td>
+            <td class="yes reflect-col">✓</td>
+            <td class="partial">Partial</td>
+            <td class="no">✗</td>
+            <td class="no">✗</td>
+            <td class="no">✗</td>
+            <td class="no">✗</td>
+          </tr>
+          <tr>
+            <td>Structured decision fields</td>
+            <td class="yes reflect-col">✓</td>
+            <td class="partial">Template needed</td>
+            <td class="partial">Plugin needed</td>
+            <td class="partial">Manual setup</td>
+            <td class="no">✗</td>
+            <td class="no">✗</td>
+          </tr>
+          <tr>
+            <td>Automated review scheduling</td>
+            <td class="yes reflect-col">✓</td>
+            <td class="no">✗</td>
+            <td class="no">✗</td>
+            <td class="no">✗</td>
+            <td class="no">✗</td>
+            <td class="no">✗</td>
+          </tr>
+          <tr>
+            <td>Confidence calibration analysis</td>
+            <td class="yes reflect-col">✓</td>
+            <td class="no">✗</td>
+            <td class="no">✗</td>
+            <td class="no">✗</td>
+            <td class="no">✗</td>
+            <td class="no">✗</td>
+          </tr>
+          <tr>
+            <td>Field-level encryption</td>
+            <td class="yes reflect-col">✓ (AES-256)</td>
+            <td class="no">✗</td>
+            <td class="partial">Local only</td>
+            <td class="no">✗</td>
+            <td class="no">✗</td>
+            <td class="no">✗</td>
+          </tr>
+          <tr>
+            <td>Team workspace + role access</td>
+            <td class="yes reflect-col">✓</td>
+            <td class="partial">General</td>
+            <td class="no">✗</td>
+            <td class="partial">Manual</td>
+            <td class="no">✗</td>
+            <td class="partial">Task-based</td>
+          </tr>
+          <tr>
+            <td>Record locking (prevents hindsight editing)</td>
+            <td class="yes reflect-col">✓</td>
+            <td class="no">✗</td>
+            <td class="no">✗</td>
+            <td class="no">✗</td>
+            <td class="no">✗</td>
+            <td class="no">✗</td>
+          </tr>
+          <tr>
+            <td>Purpose-built for decision tracking</td>
+            <td class="yes reflect-col">✓</td>
+            <td class="no">✗</td>
+            <td class="no">✗</td>
+            <td class="no">✗</td>
+            <td class="no">✗</td>
+            <td class="no">✗</td>
+          </tr>
+          <tr>
+            <td>Starting price</td>
+            <td class="reflect-col">£49/month</td>
+            <td>Free–$20/mo</td>
+            <td>Free–$10/mo</td>
+            <td>Free</td>
+            <td>~£15</td>
+            <td>$10–50/mo</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>Alternative 1: Notion</h2>
+
+      <div class="alternative-card">
+        <div class="verdict">Best for: Flexible teams who want a customisable starting point</div>
+        <h3>What Notion does well for decision tracking</h3>
+        <p>Notion is the most popular alternative. With a well-designed template, it handles basic decision logging effectively. Database views, filters, and formulas provide flexible ways to organise and query decision records. For teams already using Notion as a central workspace, adding a decision database requires no additional tooling.</p>
+      </div>
+
+      <p><strong>Where Notion breaks down at scale:</strong> Notion provides no automated review scheduling. Reviews happen when you remember to do them — which typically means sporadically or not at all. It provides no calibration analysis: measuring whether your 70%-confident decisions succeed 70% of the time requires manual calculation across your database. It has no record locking mechanism, making it easy to inadvertently (or deliberately) edit original rationale after outcomes are known. And it uses standard cloud encryption rather than field-level encryption appropriate for sensitive executive decisions.</p>
+
+      <p><a href="/blog/reflect-os-vs-notion">Detailed Reflect OS vs Notion comparison →</a></p>
+
+      <h2>Alternative 2: Obsidian</h2>
+
+      <div class="alternative-card">
+        <div class="verdict">Best for: Users who want local storage and maximum note-taking flexibility</div>
+        <h3>What Obsidian does well</h3>
+        <p>Obsidian is a powerful local-first note-taking tool with a strong plugin ecosystem. For users who want to keep decision data entirely on their device, it offers more privacy control than cloud tools. The Dataview plugin can query and display decision records in table format, providing some analytical capability.</p>
+      </div>
+
+      <p><strong>Where Obsidian breaks down:</strong> Being local-first creates sync challenges for mobile capture — the core use case for fast decision logging at the moment a decision is made. There is no automated review scheduling. Calibration analysis requires either significant manual work or custom plugins. And for teams, Obsidian has no native sharing or collaboration capability.</p>
+
+      <p><a href="/blog/reflect-os-vs-obsidian">Detailed Reflect OS vs Obsidian comparison →</a></p>
+
+      <h2>Alternative 3: Spreadsheets</h2>
+
+      <div class="alternative-card">
+        <div class="verdict">Best for: Initial experimentation before committing to a dedicated tool</div>
+        <h3>What spreadsheets do well</h3>
+        <p>Spreadsheets are free, familiar, and flexible. They are the natural starting point for most people who want to experiment with decision logging without committing to a paid tool. A well-structured spreadsheet with the right columns can capture most of what a decision log needs.</p>
+      </div>
+
+      <p><strong>Where spreadsheets break down:</strong> No automated review scheduling. No calibration analysis without significant formula work. No mobile-optimised capture flow. No record locking. No appropriate encryption for sensitive decisions. Spreadsheets work for 30–50 decisions; above that, the limitations compound.</p>
+
+      <h2>Alternative 4: Physical journals</h2>
+
+      <div class="alternative-card">
+        <div class="verdict">Best for: Low-friction initial habit formation; not suitable for analysis</div>
+        <h3>What physical journals do well</h3>
+        <p>Physical decision journals have one genuine advantage: zero friction for initial capture. No app to open, no account to log in to. For professionals who resist digital tools, a paper journal is better than no decision record at all.</p>
+      </div>
+
+      <p><strong>Where physical journals break down:</strong> Impossible to analyse at scale. Patterns across 100 handwritten decisions cannot be surfaced without manual transcription. No automated review reminders. Not searchable. Not shareable with teams. Suitable for establishing the initial habit; not suitable as a long-term solution for anyone who wants calibration data.</p>
+
+      <h2>Alternative 5: Generic project management tools</h2>
+
+      <div class="alternative-card">
+        <div class="verdict">Best for: Task management — not decision intelligence</div>
+        <h3>Why project management tools are not decision intelligence tools</h3>
+        <p>Asana, Monday.com, Jira, and similar tools are designed to track tasks and projects. They can be configured to log decisions as records, but they are missing the core functionality that makes decision tracking valuable: confidence scoring at log time, automated calibration analysis, and review cadences based on decision horizons rather than task deadlines.</p>
+      </div>
+
+      <div class="faq-section">
+        <h2>Frequently asked questions</h2>
+
+        <div class="faq-item">
+          <h3>What is the best alternative to Reflect OS?</h3>
+          <p>The best alternative depends on your requirements. Notion or Obsidian with a decision journal template provides flexibility without calibration analysis. A spreadsheet is viable for basic tracking. None of these alternatives provide automated review scheduling, native calibration analysis, or field-level encryption — the capabilities that distinguish purpose-built decision intelligence software.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Can I use Notion for decision tracking instead of Reflect OS?</h3>
+          <p>Yes, Notion handles basic decision logging well with a good template. However, it provides no automated review scheduling, no calibration analysis, and no field-level encryption. For users who primarily need a structured decision log without analytics, Notion is a reasonable starting point. For calibration tracking and automated reviews, Reflect OS is purpose-built.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Is a spreadsheet good enough for decision tracking?</h3>
+          <p>A spreadsheet works for initial experimentation. It breaks down at scale: no automated review scheduling (so reviews happen rarely), no calibration analysis without significant manual effort, and no appropriate encryption for sensitive content. Better than nothing; meaningfully inferior to purpose-built tools for serious practice.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>How does Reflect OS compare to Obsidian for decision journaling?</h3>
+          <p>Obsidian is excellent for note-taking and knowledge management but creates sync challenges for mobile capture, provides no automated review scheduling, and has no calibration analysis. Reflect OS is cloud-based, mobile-first, and purpose-built for the decision review cycle Obsidian cannot automate.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>What makes Reflect OS different from general tools?</h3>
+          <p>Reflect OS is purpose-built for decision intelligence: four-field capture in under 60 seconds, automated review scheduling at 30/90/180 days, native calibration analysis across decision categories, and AES-256 field-level encryption for sensitive executive and investment decisions.</p>
+        </div>
+      </div>
+
+      <div class="page-cta">
+        <h2>Ready to try Reflect OS?</h2>
+        <p>90-day money-back guarantee. Log your first decision in under 60 seconds.</p>
+        <a href="https://app.reflect-os.com/signup" class="btn btn-primary" style="margin-right: 12px;">Get started</a>
+        <a href="/how-it-works" class="btn btn-outline">See how it works</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="footer"><div class="container"><div class="footer-grid"><div><div class="footer-brand">Reflect OS</div><p class="footer-desc">Decision intelligence for high-stakes teams.</p></div><div class="footer-col"><h5>Product</h5><ul class="footer-links"><li><a href="/product">Overview</a></li><li><a href="/how-it-works">How it works</a></li><li><a href="/pricing">Pricing</a></li></ul></div><div class="footer-col"><h5>Company</h5><ul class="footer-links"><li><a href="/about">About</a></li><li><a href="/contact">Contact</a></li><li><a href="/privacy">Privacy</a></li></ul></div></div><p class="footer-guarantee">90-day money-back guarantee on all plans.</p>
+  <div class="footer-bottom"><span>© 2026 Reflect OS.</span><div class="footer-legal"><a href="/privacy">Privacy</a><a href="/terms">Terms</a></div></div></div></footer>
+<script>
+function toggleNav(btn) {
+  const expanded = btn.getAttribute('aria-expanded') === 'true';
+  btn.setAttribute('aria-expanded', String(!expanded));
+  const links = document.querySelector('.nav-links');
+  if (links) links.classList.toggle('open');
+}
+document.addEventListener('click', function(e) {
+  const links = document.querySelector('.nav-links');
+  const toggle = document.querySelector('.nav-hamburger');
+  if (links && links.classList.contains('open') && toggle && !toggle.contains(e.target) && !links.contains(e.target)) {
+    links.classList.remove('open');
+    toggle.setAttribute('aria-expanded', 'false');
+  }
+});
+</script>
+</body>
+</html>

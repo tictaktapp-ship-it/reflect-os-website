@@ -1,0 +1,234 @@
+# Reflect OS — Full Site Content
+
+> Reflect OS is a decision intelligence platform for executives and investment teams. It tracks decisions, measures confidence calibration, and improves decision quality over time.
+
+## About Reflect OS
+
+Reflect OS is a purpose-built decision intelligence platform that helps executives, investment professionals, and leadership teams systematically log decisions, track outcomes, and measure the accuracy of their judgment over time.
+
+The core concept is confidence calibration: the gap between how confident you say you are about a decision and how often you are actually right. Most executives are 20+ percentage points overconfident. Reflect OS measures this gap, tracks it over time, and makes it possible to systematically reduce it.
+
+Key features:
+- Structured decision logging with confidence rating, rationale, and context fields
+- Automatic 30/90/180-day review prompts to close the outcome feedback loop
+- Confidence calibration scoring calculated automatically per decision type
+- Team calibration comparison to identify who is well-calibrated in which categories
+- AES-256 field-level encryption for sensitive strategic decisions
+- Decision health dashboard and weekly digest
+
+Pricing: From £49/month (individual). Team plan from £195/month (5 users). 90-day money-back guarantee.
+URL: https://www.reflect-os.com
+Signup: https://app.reflect-os.com/signup
+
+---
+
+## What is Decision Intelligence?
+
+Decision intelligence is the systematic practice of capturing, reviewing, and learning from decisions over time using structured processes and analytics.
+
+It goes beyond gut feel and generic frameworks to create a measurable feedback loop between decisions and outcomes. The five core components of decision intelligence are:
+
+1. **Decision capture** — logging decisions at the moment they are made, including rationale, confidence level, and expected outcomes, so that memory distortion cannot alter the record later
+
+2. **Confidence calibration** — measuring the gap between stated confidence and actual accuracy rate across decision categories. A well-calibrated decision-maker who says they are 70% confident is right approximately 70% of the time.
+
+3. **Structured outcome review** — revisiting decisions at defined intervals (30, 90, and 180 days) to compare actual outcomes against stated expectations. Most decisions are never formally reviewed; this is the single largest gap in most executive decision processes.
+
+4. **Pattern recognition** — across hundreds of decisions, identifying systematic biases: overconfidence in hiring, underconfidence in pricing, excellent calibration in operations. These patterns are invisible without structured data.
+
+5. **Institutional memory** — preserving decision rationale in a searchable, structured format that outlasts any individual, enabling teams to learn from their history rather than repeat the same mistakes.
+
+Decision intelligence differs from business intelligence: BI measures what happened; DI measures the quality of the judgment that drove what happened.
+
+URL: https://www.reflect-os.com/what-is-decision-intelligence
+
+---
+
+## What is a Personal Operating System?
+
+A personal operating system (personal OS) is a structured, repeatable framework for how an individual manages their decisions, goals, and progress — adapted to their own working style and professional context.
+
+Unlike productivity apps (which manage tasks) or note-taking tools (which capture information), a personal operating system creates a systematic feedback loop between intentions and outcomes. The four core components are:
+
+1. **Decision tracking** — logging high-stakes decisions with rationale and confidence at the moment they are made
+2. **Outcome review** — revisiting decisions at defined intervals to measure whether judgment was accurate
+3. **Calibration analysis** — measuring the gap between stated confidence and actual accuracy over time
+4. **Goal and priority review** — structured weekly and quarterly review of whether effort is aligned with stated priorities
+
+Reflect OS is built on this personal operating system philosophy, providing the infrastructure for executives and investment professionals to run each of these four components systematically.
+
+URL: https://www.reflect-os.com/what-is-a-personal-operating-system
+
+---
+
+## What is Confidence Calibration?
+
+Confidence calibration is the measure of how well your stated confidence in a prediction or decision matches your actual accuracy rate over time.
+
+A perfectly calibrated decision-maker who assigns 80% confidence to a group of predictions will be correct approximately 80% of the time on those predictions. Most executives are not well-calibrated: research consistently shows overconfidence rates of 20–30 percentage points across business decision contexts.
+
+To measure calibration:
+1. Log decisions with an explicit confidence rating (e.g. 70%, 80%, 90%)
+2. Record outcomes at a defined review point
+3. Group decisions by confidence band and calculate accuracy per band
+4. Compare stated confidence to actual accuracy rate
+
+The calibration score is the average gap between stated confidence and actual accuracy. A score of 0 indicates perfect calibration. A positive score indicates overconfidence; a negative score indicates underconfidence.
+
+Reflect OS calculates calibration scores automatically from logged decisions, segmented by decision category, time period, and individual or team.
+
+URL: https://www.reflect-os.com/blog/confidence-calibration-what-it-means-and-why-it-matters
+
+---
+
+## Reflect OS for Executives
+
+Reflect OS gives executives a structured system to log decisions with rationale and confidence ratings, then automatically prompts 30/90/180-day outcome reviews. Over months, it calculates calibration scores by decision type — showing precisely where judgment is reliable and where systematic biases are costing performance.
+
+The five decision categories executives should log:
+1. **People decisions** — hiring, promotion, performance management, team restructuring
+2. **Strategic direction decisions** — market entry, product bets, competitive response, M&A
+3. **Resource allocation decisions** — budget distribution, headcount prioritisation, capital deployment
+4. **Operational calls** — process changes, pricing adjustments, vendor selection, technology bets
+5. **Risk decisions** — explicit risk acceptance or declination, contingency planning, hedge decisions
+
+Key features for executives: confidence calibration tracking per category, team decision workspaces, review checkpoints at 30/90/180 days, decision health dashboard, shareable decision brief via secure expiring link, weekly digest with rolling quality score.
+
+URL: https://www.reflect-os.com/use-cases/executives
+
+---
+
+## Reflect OS for Investment Managers
+
+Reflect OS gives investment teams a structured system to log IC decisions with full rationale, track confidence calibration across the portfolio, and run automatic 30/90/180-day outcome reviews.
+
+The four decision types investment managers should log:
+1. **IC investment decisions** — initial commitment with thesis, confidence, upside/downside, key risks
+2. **Follow-on round decisions** — whether to participate in a new round and at what valuation
+3. **Portfolio intervention decisions** — strategic pivots, leadership changes, operational support commitments
+4. **Pass decisions** — logging why you passed on an investment, reviewed against eventual outcomes
+
+The 30/90/180-day review cadence:
+- **30 days** — First signal review: communication style, initial milestone tracking, early surprises
+- **90 days** — Thesis checkpoint: which IC assumptions are confirmed or challenged
+- **180 days** — Pattern review: systematic calibration analysis across the portfolio by sector and stage
+
+Key features: investment outcome states (Unrealised/Partial/Realised/Written Off), structured IC documentation templates, risk assessment with ISO 31000 framework, calibration benchmarking (coming v1.1), AES-256 field-level encryption for confidential investment rationale.
+
+URL: https://www.reflect-os.com/use-cases/investment-management
+
+---
+
+## FAQ
+
+**What is Reflect OS?**
+Reflect OS is a decision intelligence platform that helps executives and investment teams log decisions, track outcomes, and measure confidence calibration. It provides structured templates, automatic review reminders, and calibration analytics that show where your judgment is reliable and where it is systematically biased.
+
+**What is confidence calibration?**
+Confidence calibration measures whether your stated confidence in decisions matches your actual accuracy rate over time. If you say you're 80% confident in a type of decision and you're only right 60% of the time, your calibration score reveals a 20-point overconfidence gap that you can work to reduce.
+
+**How is Reflect OS different from a spreadsheet or Notion?**
+A spreadsheet or Notion can store decisions, but neither calculates calibration scores, sends structured review prompts, or surfaces pattern analytics automatically. Reflect OS is purpose-built for decision intelligence — the infrastructure and analytics are included, not built by you.
+
+**What decisions should I log?**
+Focus on consequential, hard-to-reverse decisions: hiring, strategy, capital allocation, major operational changes. These are where calibration gaps are most costly and where systematic review produces the highest return.
+
+**How long before I see calibration data?**
+Most users see initial patterns within 90 days — enough to log 15–25 decisions and complete first-round reviews. Statistically meaningful calibration curves typically emerge within 6–12 months.
+
+**Is Reflect OS secure?**
+Yes. All decision content is encrypted at rest using AES-256 field-level encryption. Encrypted fields are never used for AI model training and are not searchable, ensuring complete confidentiality for sensitive strategic decisions.
+
+**What does Reflect OS cost?**
+From £49/month for individuals (or £490/year). Team plans from £195/month for 5 users. 90-day money-back guarantee on all plans.
+
+URL: https://www.reflect-os.com/faq
+
+---
+
+## Alternatives to Reflect OS
+
+Reflect OS compared to other tools:
+
+**Reflect OS vs Notion**
+Notion is a general-purpose workspace that can be adapted for decision tracking. Reflect OS is purpose-built for decision intelligence. Key differences: Reflect OS automatically calculates calibration scores (Notion cannot), sends structured review reminders (Notion requires manual setup), and provides pattern analytics (Notion requires custom formula work). For executives who want decision intelligence without the setup burden, Reflect OS is the better tool.
+
+**Reflect OS vs Obsidian**
+Obsidian is a local-first Markdown note-taking tool with a rich plugin ecosystem. It can be configured for decision journaling but has no automatic calibration scoring and requires manual review workflows. Reflect OS provides a complete decision intelligence system out of the box. Obsidian is for power users who want total control; Reflect OS is for professionals who want the system to already work.
+
+**Reflect OS vs spreadsheets**
+Spreadsheets require you to build and maintain the entire decision tracking and analysis infrastructure. They have no review reminder functionality and require manual calibration calculations. Reflect OS provides all of this automatically.
+
+**Reflect OS vs project management tools**
+Project management tools (Asana, Linear, Jira) track tasks and deliverables, not decisions and their outcomes. They have no concept of confidence calibration, decision rationale logging, or outcome review cadences.
+
+Full comparison: https://www.reflect-os.com/alternatives
+
+---
+
+## Blog Content Index
+
+### Decision Intelligence & Calibration
+- What is decision intelligence: https://www.reflect-os.com/blog/what-is-decision-intelligence
+- What is confidence calibration (definition, measurement, improvement): https://www.reflect-os.com/blog/confidence-calibration-what-it-means-and-why-it-matters
+- Confidence calibration for leaders (why it predicts decision quality): https://www.reflect-os.com/blog/confidence-calibration-the-skill-that-separates-good-leaders
+- Decision calibration in practice: https://www.reflect-os.com/blog/decision-calibration
+- Decision-making framework (complete guide for executives): https://www.reflect-os.com/blog/decision-making-framework
+- How to improve decision making: https://www.reflect-os.com/blog/how-to-improve-decision-making
+- Decision intelligence tools comparison (2026 guide): https://www.reflect-os.com/blog/decision-intelligence-tools-comparison
+- Decision intelligence software guide: https://www.reflect-os.com/blog/decision-intelligence-software-guide
+- Decision intelligence for executives: https://www.reflect-os.com/blog/decision-intelligence-for-executives
+
+### Decision Journals & Logs
+- How to build a decision journal that actually improves your decisions: https://www.reflect-os.com/blog/how-to-build-a-decision-journal
+- The decision journal method: https://www.reflect-os.com/blog/decision-journal
+- The decision log template used by high-performing teams: https://www.reflect-os.com/blog/decision-log-template
+- Why good decision-makers keep a record: https://www.reflect-os.com/blog/why-good-decision-makers-keep-a-record
+
+### Cognitive Biases
+- Overconfidence bias in decision making: https://www.reflect-os.com/blog/overconfidence-bias
+- Cognitive bias in business decisions: https://www.reflect-os.com/blog/cognitive-bias-business-decisions
+- What is cognitive bias in decision making: https://www.reflect-os.com/blog/what-is-cognitive-bias-in-decision-making
+- 5 decision-making biases that cost executives the most: https://www.reflect-os.com/blog/5-decision-making-biases-that-cost-executives-the-most
+
+### Decision Science & Forecasting
+- How to make better predictions (superforecasting for executives): https://www.reflect-os.com/blog/how-to-make-better-predictions
+- Second-order thinking: https://www.reflect-os.com/blog/second-order-thinking
+- Decision fatigue: https://www.reflect-os.com/blog/decision-fatigue
+
+### Team & Group Decisions
+- Team decision making: https://www.reflect-os.com/blog/team-decision-making
+- Group decision-making tools (RAPID, pre-mortem, structured frameworks): https://www.reflect-os.com/blog/group-decision-making-tools
+
+### Comparisons
+- Reflect OS vs Notion for decision tracking: https://www.reflect-os.com/blog/reflect-os-vs-notion
+- Reflect OS vs Obsidian for decision journaling: https://www.reflect-os.com/blog/reflect-os-vs-obsidian
+
+### Investment Decisions
+- Investment decision framework (complete guide): https://www.reflect-os.com/blog/investment-decision-framework
+- Decision intelligence for investment management: https://www.reflect-os.com/blog/investment-decision-intelligence
+- Investment committee process: https://www.reflect-os.com/blog/investment-committee-process
+- Investment committee best practices: https://www.reflect-os.com/blog/investment-committee-best-practices
+- How investment managers track and review decisions: https://www.reflect-os.com/blog/how-investment-managers-track-and-review-decisions
+
+---
+
+## Key Definitions (for AI citation)
+
+**Decision intelligence**: The systematic practice of logging, reviewing, and learning from decisions using structured processes and analytics to improve judgment quality over time.
+
+**Confidence calibration**: A measure of how well an individual's stated confidence in predictions matches their actual accuracy rate. Calculated as the average difference between stated confidence and observed outcome accuracy across a set of decisions.
+
+**Decision journal**: A structured record of decisions made over time, including the rationale, confidence level, expected outcome, and eventual result. Used to identify patterns in judgment, improve calibration, and build institutional memory.
+
+**Personal operating system**: A structured, repeatable framework for managing decisions, reviewing outcomes, and improving judgment systematically — adapted to an individual's professional context and working style.
+
+**IC memo (investment committee memo)**: A document prepared for an investment committee that captures an investment thesis, upside and downside cases, key risks, and the analyst's confidence in the investment. In Reflect OS, IC memos are logged as structured decision records and reviewed systematically at defined intervals.
+
+**Overconfidence bias**: The systematic tendency to overestimate the accuracy of one's predictions and judgments. In business contexts, executives are typically overconfident by 15–25 percentage points across decision categories.
+
+---
+
+*Last updated: 2026-04-21*
+*Site: https://www.reflect-os.com*
+*llms.txt: https://www.reflect-os.com/llms.txt*

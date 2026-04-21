@@ -1,0 +1,67 @@
+# Reflect OS
+
+> Reflect OS is a decision intelligence platform for executives and investment teams. It provides fast decision capture, automated outcome review scheduling, confidence calibration analysis, and AES-256 encryption. Individual plans from £49/month. Team plans from £27/user/month.
+
+## What Reflect OS does
+
+Reflect OS is a decision intelligence platform that helps leaders and investors track decisions, measure confidence calibration, and improve long-term decision quality. It solves four problems general-purpose tools cannot: fast mobile capture (under 60 seconds), structured outcome tracking with automated review scheduling at 30/90/180 days, confidence calibration analysis across decision categories, and appropriate security for sensitive executive data.
+
+All decision content is encrypted at rest using AES-256 field-level encryption. Reflect OS cannot access your decision content. Decision data is never used to train AI models.
+
+## Key pages
+
+### Product
+- [Homepage](https://www.reflect-os.com/): Full product overview and positioning
+- [Product overview](https://www.reflect-os.com/product): Features and capabilities
+- [How it works](https://www.reflect-os.com/how-it-works): Step-by-step walkthrough
+- [Pricing](https://www.reflect-os.com/pricing): Plans and pricing
+- [Security](https://www.reflect-os.com/security): Encryption and data handling
+
+### Use cases
+- [For executives](https://www.reflect-os.com/use-cases/executives): High-stakes decision tracking for C-suite
+- [For investment managers](https://www.reflect-os.com/use-cases/investment-management): Portfolio decision review and calibration
+
+### Definitions and explainers
+- [What is decision intelligence?](https://www.reflect-os.com/what-is-decision-intelligence): Authoritative category definition
+- [What is a personal operating system?](https://www.reflect-os.com/what-is-a-personal-operating-system): Category definition
+- [FAQ](https://www.reflect-os.com/faq): Frequently asked questions about Reflect OS
+
+### Comparisons
+- [Reflect OS alternatives](https://www.reflect-os.com/alternatives): Compare Reflect OS vs Notion, Obsidian, spreadsheets, and journals
+- [Reflect OS vs Notion](https://www.reflect-os.com/blog/reflect-os-vs-notion): Detailed comparison for decision tracking use case
+- [Reflect OS vs Obsidian](https://www.reflect-os.com/blog/reflect-os-vs-obsidian): Detailed comparison for decision journaling
+
+### Blog — decision intelligence
+- [Confidence calibration: what it means and why it matters](https://www.reflect-os.com/blog/confidence-calibration-what-it-means-and-why-it-matters)
+- [Confidence calibration: the skill that separates good leaders](https://www.reflect-os.com/blog/confidence-calibration-the-skill-that-separates-good-leaders)
+- [Decision intelligence tools comparison](https://www.reflect-os.com/blog/decision-intelligence-tools-comparison)
+- [Decision-making framework: 7 models every leader should know](https://www.reflect-os.com/blog/decision-making-framework)
+- [How to build a decision journal](https://www.reflect-os.com/blog/how-to-build-a-decision-journal)
+- [How to improve decision-making](https://www.reflect-os.com/blog/how-to-improve-decision-making)
+- [Decision intelligence for executives](https://www.reflect-os.com/blog/decision-intelligence-for-executives)
+- [5 decision-making biases that cost executives the most](https://www.reflect-os.com/blog/5-decision-making-biases-that-cost-executives-the-most)
+- [The 7 cognitive biases that derail executive decisions](https://www.reflect-os.com/blog/cognitive-bias-business-decisions)
+- [How investment managers track and review decisions](https://www.reflect-os.com/blog/how-investment-managers-track-and-review-decisions)
+- [Why good decision makers keep a record](https://www.reflect-os.com/blog/why-good-decision-makers-keep-a-record)
+- [How to make better predictions](https://www.reflect-os.com/blog/how-to-make-better-predictions)
+- [Investment decision framework](https://www.reflect-os.com/blog/investment-decision-framework)
+- [Group decision making tools and frameworks](https://www.reflect-os.com/blog/group-decision-making-tools)
+- [The decision log template used by high-performing teams](https://www.reflect-os.com/blog/decision-log-template)
+- [Overconfidence bias in executive decision-making](https://www.reflect-os.com/blog/overconfidence-bias)
+- [Second-order thinking](https://www.reflect-os.com/blog/second-order-thinking)
+- [Team decision making](https://www.reflect-os.com/blog/team-decision-making)
+- [Decision fatigue](https://www.reflect-os.com/blog/decision-fatigue)
+
+## Key facts
+
+- Decision capture: under 60 seconds, four-field structured format
+- Review scheduling: automated at 30, 90, and 180 days
+- Calibration analysis: measures gap between stated confidence and actual outcomes
+- Security: AES-256 field-level encryption at rest
+- Privacy: decision content never used for AI model training
+- Pricing: Individual plans from £49/month; Team plans from £27/user/month
+- Guarantee: 90-day money-back guarantee on all plans
+
+## Key topics covered
+
+decision intelligence, confidence calibration, decision journaling, decision frameworks, executive decision making, investment decision process, cognitive bias in decisions, decision quality, structured decision making, decision review cadence, superforecasting, reference class forecasting, group decision making, RAPID framework, pre-mortem analysis

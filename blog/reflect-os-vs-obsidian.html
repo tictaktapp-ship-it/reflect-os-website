@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reflect OS vs Obsidian for Decision Journaling: Key Differences | Reflect OS</title>
+  <meta name="description" content="Reflect OS vs Obsidian for decision journaling: what each tool does well, where Obsidian's approach falls short, and which professionals should use each.">
+  <link rel="canonical" href="https://www.reflect-os.com/blog/reflect-os-vs-obsidian">
+  <meta property="og:title" content="Reflect OS vs Obsidian for Decision Journaling: Key Differences">
+  <meta property="og:description" content="Comparing Reflect OS and Obsidian for decision journaling, confidence tracking, and outcome review. An honest assessment of both tools.">
+  <meta property="og:url" content="https://www.reflect-os.com/blog/reflect-os-vs-obsidian">
+  <meta property="og:type" content="article">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Reflect OS vs Obsidian for Decision Journaling: Key Differences">
+  <meta name="twitter:description" content="Comparing Reflect OS and Obsidian for decision journaling, confidence tracking, and outcome review.">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Reflect OS vs Obsidian for Decision Journaling: Key Differences",
+    "description": "A detailed comparison of Reflect OS and Obsidian for decision journaling, outcome tracking, and confidence calibration.",
+    "datePublished": "2026-04-21",
+    "dateModified": "2026-04-21",
+    "author": {"@type": "Organization", "name": "Reflect OS"},
+    "publisher": {"@type": "Organization", "name": "Reflect OS", "url": "https://www.reflect-os.com"},
+    "mainEntityOfPage": {"@type": "WebPage", "@id": "https://www.reflect-os.com/blog/reflect-os-vs-obsidian"}
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Can Obsidian be used as a decision journal?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Yes — Obsidian is a capable decision journal for users who are comfortable with Markdown and plugin configuration. Using templates and the Dataview plugin, you can log decisions, record confidence ratings, and query your vault for overdue reviews. The limitation is that Obsidian won't calculate calibration scores or send proactive review reminders without significant custom setup."}
+      },
+      {
+        "@type": "Question",
+        "name": "What is the main difference between Reflect OS and Obsidian?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Obsidian is a local-first, Markdown-based note-taking tool with a rich plugin ecosystem. Reflect OS is a purpose-built decision intelligence platform with automatic calibration scoring, structured review cadences, and outcome analytics. Obsidian gives you total control and requires you to build the system; Reflect OS provides the system already built."}
+      },
+      {
+        "@type": "Question",
+        "name": "Is Obsidian or Reflect OS better for privacy?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Both tools take privacy seriously but in different ways. Obsidian stores files locally on your device by default — no cloud sync unless you use Obsidian Sync or a third-party sync provider. Reflect OS is cloud-based but uses AES-256 field-level encryption on each decision field. For sensitive decisions, Reflect OS's encryption model provides stronger security against data breaches than local storage (which relies on device security)."}
+      },
+      {
+        "@type": "Question",
+        "name": "Does Obsidian have a calibration tracking plugin?",
+        "acceptedAnswer": {"@type": "Answer", "text": "There is no dedicated calibration tracking plugin in the Obsidian ecosystem as of 2026. You can approximate calibration analysis using Dataview queries that group decisions by confidence band and count correct outcomes, but this requires ongoing manual data entry in a consistent format and does not produce automatic calibration score charts."}
+      },
+      {
+        "@type": "Question",
+        "name": "Who should use Obsidian for decisions vs Reflect OS?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Obsidian suits professionals who want full control over their notes, are comfortable with Markdown and plugins, and prefer local file storage. It works well for building a personal knowledge base where decisions are one component. Reflect OS suits professionals who want a dedicated decision intelligence system with automatic calibration, structured reviews, and team-level analytics — without the setup overhead."}
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; color: #1a1a2e; line-height: 1.7; background: #fff; }
+    nav { background: #fff; border-bottom: 1px solid #e8e8f0; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; height: 64px; position: sticky; top: 0; z-index: 100; }
+    .nav-brand { font-weight: 700; font-size: 1.2rem; color: #1a1a2e; text-decoration: none; }
+    .nav-links { display: flex; gap: 24px; list-style: none; }
+    .nav-links a { color: #555; text-decoration: none; font-size: 0.9rem; }
+    .nav-links a:hover { color: #4f46e5; }
+    .nav-cta { background: #4f46e5; color: #fff !important; padding: 8px 16px; border-radius: 6px; font-weight: 600; }
+
+    .article-hero { background: linear-gradient(135deg, #f0f0ff 0%, #fff 100%); padding: 64px 24px 48px; text-align: center; }
+    .article-hero .tag { display: inline-block; background: #ede9fe; color: #4f46e5; padding: 4px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 16px; }
+    .article-hero h1 { font-size: clamp(1.6rem, 4vw, 2.4rem); font-weight: 800; max-width: 760px; margin: 0 auto 16px; }
+    .article-meta { color: #666; font-size: 0.9rem; margin-top: 8px; }
+
+    .article-body { max-width: 760px; margin: 0 auto; padding: 48px 24px 80px; }
+    h2 { font-size: 1.5rem; font-weight: 700; margin: 48px 0 16px; color: #1a1a2e; }
+    h3 { font-size: 1.15rem; font-weight: 700; margin: 32px 0 12px; color: #1a1a2e; }
+    p { margin-bottom: 20px; color: #333; }
+    ul, ol { padding-left: 24px; margin-bottom: 20px; }
+    li { margin-bottom: 8px; color: #333; }
+
+    .verdict-box { background: #f0f4ff; border-left: 4px solid #4f46e5; padding: 20px 24px; border-radius: 0 8px 8px 0; margin: 32px 0; }
+    .verdict-box strong { color: #4f46e5; display: block; margin-bottom: 8px; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em; }
+
+    .comparison-table { width: 100%; border-collapse: collapse; margin: 32px 0; font-size: 0.9rem; }
+    .comparison-table th { background: #1a1a2e; color: #fff; padding: 12px 16px; text-align: left; }
+    .comparison-table th.reflect-col { background: #4f46e5; }
+    .comparison-table td { padding: 12px 16px; border-bottom: 1px solid #e8e8f0; vertical-align: top; }
+    .comparison-table tr:nth-child(even) td { background: #f9f9ff; }
+    .yes { color: #16a34a; font-weight: 600; }
+    .no { color: #dc2626; font-weight: 600; }
+    .partial { color: #d97706; font-weight: 600; }
+
+    .who-box { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin: 32px 0; }
+    .who-card { border: 1px solid #e8e8f0; border-radius: 10px; padding: 24px; }
+    .who-card h3 { font-size: 1rem; margin: 0 0 12px; }
+    .who-card ul { padding-left: 18px; }
+    .who-card li { font-size: 0.9rem; margin-bottom: 6px; }
+    .reflect-card { border-color: #4f46e5; background: #f5f3ff; }
+
+    .faq-section { margin: 48px 0; }
+    .faq-item { border-bottom: 1px solid #e8e8f0; padding: 20px 0; }
+    .faq-item h3 { font-size: 1rem; margin: 0 0 10px; color: #1a1a2e; }
+    .faq-item p { margin: 0; font-size: 0.95rem; }
+
+    .cta-box { background: #1a1a2e; color: #fff; border-radius: 12px; padding: 40px; text-align: center; margin: 48px 0; }
+    .cta-box h2 { color: #fff; margin: 0 0 12px; font-size: 1.4rem; }
+    .cta-box p { color: #aab; margin: 0 0 24px; }
+    .cta-btn { display: inline-block; background: #4f46e5; color: #fff; padding: 14px 28px; border-radius: 8px; text-decoration: none; font-weight: 700; }
+
+    .related { background: #f9f9ff; border-radius: 12px; padding: 32px; margin: 48px 0; }
+    .related h3 { margin: 0 0 16px; font-size: 1rem; text-transform: uppercase; letter-spacing: 0.05em; color: #666; }
+    .related ul { list-style: none; padding: 0; }
+    .related li { margin-bottom: 10px; }
+    .related a { color: #4f46e5; text-decoration: none; font-weight: 500; }
+    .related a:hover { text-decoration: underline; }
+
+    @media (max-width: 600px) {
+      .who-box { grid-template-columns: 1fr; }
+      .comparison-table { font-size: 0.8rem; }
+      .comparison-table th, .comparison-table td { padding: 8px 10px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-brand">Reflect OS</a>
+  <ul class="nav-links">
+    <li><a href="/use-cases/executives">Executives</a></li>
+    <li><a href="/use-cases/investment-management">Investment</a></li>
+    <li><a href="/blog">Blog</a></li>
+    <li><a href="/alternatives">Alternatives</a></li>
+    <li><a href="https://app.reflect-os.com/signup" class="nav-cta">Start free trial</a></li>
+  </ul>
+</nav>
+
+<div class="article-hero">
+  <span class="tag">Comparison</span>
+  <h1>Reflect OS vs Obsidian for Decision Journaling: Key Differences</h1>
+  <p class="article-meta">Published April 2026 · 10 min read</p>
+</div>
+
+<div class="article-body">
+
+  <div class="verdict-box speakable">
+    <strong>Summary verdict</strong>
+    Obsidian is a powerful local-first note-taking tool that power users can configure into a capable decision journal. Reflect OS is a purpose-built decision intelligence platform with automatic calibration scoring, timed review prompts, and outcome analytics included from day one. Obsidian rewards those who want full control and are willing to build their own system. Reflect OS is for those who want the system to already work.
+  </div>
+
+  <p>Obsidian has a dedicated following among knowledge workers and second-brain practitioners. It's fast, local-first, extensible, and handles linked notes beautifully. Some professionals in that community use it for decision journaling, and with the right plugins and templates, it can work reasonably well.</p>
+
+  <p>Reflect OS takes a different philosophy: instead of a blank canvas you customise, it provides a structured system for decision capture, outcome review, and calibration analysis that works without configuration. This comparison examines what each tool actually delivers for serious decision journaling.</p>
+
+  <h2>What each tool is built for</h2>
+
+  <p>Obsidian is a local Markdown editor with a powerful plugin ecosystem and a graph view for visualising connections between notes. It was designed for personal knowledge management — capturing ideas, research, and writing in linked plain-text files stored on your device.</p>
+
+  <p>Decision journaling in Obsidian is an overlay: you create templates for decision notes, use the Dataview plugin to query your vault, and build your own review system. It works, but it requires ongoing maintenance and doesn't produce automatic calibration analytics.</p>
+
+  <p>Reflect OS is built exclusively for <a href="/what-is-decision-intelligence">decision intelligence</a>: structured decision capture, confidence rating, timed outcome reviews, and calibration score calculation. The entire product is oriented around one question: are you getting better at making decisions over time?</p>
+
+  <h2>Setting up Obsidian for decision journaling</h2>
+
+  <p>A typical Obsidian decision journaling setup uses:</p>
+
+  <ul>
+    <li><strong>Templater plugin</strong>: Creates a decision note template with frontmatter fields (date, confidence, status, review_date, outcome)</li>
+    <li><strong>Dataview plugin</strong>: Queries all decision notes and renders tables filtered by status or review date</li>
+    <li><strong>Calendar plugin</strong>: Surfaces decisions due for review on a calendar view</li>
+    <li><strong>Periodic notes plugin</strong>: Integrates decision review into weekly or monthly review notes</li>
+  </ul>
+
+  <p>This setup can be genuinely good. Obsidian's local-first architecture means your decisions are plain Markdown files on your device, readable forever with any text editor. The graph view can surface connections between related decisions. And if you write well, your decision notes can be rich, nuanced records.</p>
+
+  <p>The challenges emerge when you try to do quantitative analysis on what you've written.</p>
+
+  <h2>Where Obsidian falls short for decision intelligence</h2>
+
+  <h3>No automatic calibration calculation</h3>
+
+  <p>The core metric for improving decision quality is <a href="/blog/confidence-calibration-what-it-means-and-why-it-matters">confidence calibration</a>: comparing your stated confidence against your actual accuracy rate, segmented by decision type and confidence band. Obsidian cannot compute this automatically.</p>
+
+  <p>You can build a Dataview query that approximates it — group decisions by confidence band, count outcomes per band, compute accuracy. But this requires every decision to have consistently formatted frontmatter, and the query breaks whenever data is entered inconsistently. It's a fragile workaround for a fundamental analytics gap.</p>
+
+  <h3>Review reminders are passive</h3>
+
+  <p>Obsidian can show you a Dataview table of decisions whose review dates have passed. It won't push a review prompt to you, won't structure the review conversation, and won't track that you completed the review. The difference between a passive dashboard and an active review system is the difference between information that's available and a habit that actually forms.</p>
+
+  <p>Reflect OS sends structured review prompts at 30, 90, and 180 days. The prompt appears, you engage with it, and the outcome is logged. Reviews happen because the system makes them happen.</p>
+
+  <h3>Local-first limits team use</h3>
+
+  <p>Obsidian is primarily single-player. Obsidian Sync exists and iCloud/Dropbox sync works for vault access across devices, but sharing decision journals across a team requires everyone to be using Obsidian with the same vault structure, which is operationally complex. There is no concept of team-level calibration comparison.</p>
+
+  <p>For executives who want to compare calibration scores across their leadership team, or investment managers who want to review IC-level decision quality, Obsidian has no answer.</p>
+
+  <h3>The maintenance burden of a custom system</h3>
+
+  <p>An Obsidian decision journal is a custom-built system that you own entirely — which means you also maintain it entirely. When Obsidian updates and a plugin breaks, you fix it. When your template schema changes, you update historical notes. When you onboard a colleague, you teach them your system.</p>
+
+  <p>This overhead is invisible when the system is new and you're enthusiastic about it. It becomes friction six months later when you have 200 decision notes and want to change your confidence rating scale.</p>
+
+  <h2>What Reflect OS provides that Obsidian cannot</h2>
+
+  <ul>
+    <li><strong>Automatic calibration scoring</strong>: System calculates your accuracy rate vs stated confidence — no queries to write or maintain</li>
+    <li><strong>Structured review cadence</strong>: 30/90/180-day prompted reviews you receive and respond to, without having to trigger them manually</li>
+    <li><strong>Calibration dashboard</strong>: Trend charts showing whether your calibration is improving over time and where your biases lie</li>
+    <li><strong>Team calibration</strong>: Compare individual and team calibration scores across an investment committee or leadership team</li>
+    <li><strong>AES-256 field-level encryption</strong>: Each decision field encrypted at rest — cloud security superior to typical local file security for sensitive strategic decisions</li>
+    <li><strong>Zero setup</strong>: Log your first decision in under 5 minutes without configuring any plugins or templates</li>
+  </ul>
+
+  <h2>Feature comparison</h2>
+
+  <table class="comparison-table">
+    <thead>
+      <tr>
+        <th>Feature</th>
+        <th class="reflect-col">Reflect OS</th>
+        <th>Obsidian</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Decision logging</td><td class="yes">Yes</td><td class="yes">Yes (with templates)</td></tr>
+      <tr><td>Confidence rating</td><td class="yes">Yes (structured)</td><td class="partial">Partial (frontmatter)</td></tr>
+      <tr><td>Outcome tracking</td><td class="yes">Yes</td><td class="partial">Partial (manual query)</td></tr>
+      <tr><td>Automatic calibration scores</td><td class="yes">Yes</td><td class="no">No</td></tr>
+      <tr><td>Proactive review reminders</td><td class="yes">Yes (30/90/180 day)</td><td class="no">No (passive view only)</td></tr>
+      <tr><td>Team calibration comparison</td><td class="yes">Yes</td><td class="no">No</td></tr>
+      <tr><td>Field-level encryption</td><td class="yes">AES-256</td><td class="partial">Local file only</td></tr>
+      <tr><td>Zero setup required</td><td class="yes">Yes</td><td class="no">Significant plugin setup</td></tr>
+      <tr><td>Linked notes / graph view</td><td class="no">No</td><td class="yes">Yes</td></tr>
+      <tr><td>Local-first storage</td><td class="no">Cloud (encrypted)</td><td class="yes">Yes</td></tr>
+      <tr><td>Plugin extensibility</td><td class="no">No</td><td class="yes">Extensive</td></tr>
+      <tr><td>General note-taking</td><td class="no">No</td><td class="yes">Yes</td></tr>
+      <tr><td>Price</td><td>From £49/month</td><td>Free (Sync: $10/month)</td></tr>
+    </tbody>
+  </table>
+
+  <h2>The privacy question</h2>
+
+  <p>Obsidian users often cite privacy as a reason to prefer local storage. It's a legitimate concern for sensitive decisions — acquisition targets, personnel changes, investment theses.</p>
+
+  <p>Obsidian's local-first model keeps files on your device by default. But local files are only as secure as your device: if your laptop is stolen, compromised, or accessed by another person, those files are at risk.</p>
+
+  <p>Reflect OS is cloud-based, but uses AES-256 field-level encryption — meaning each individual decision field is encrypted with a key that is not stored alongside the data. Even in the event of a database breach, individual decision fields are not readable without the encryption keys. This is a stronger security model than plaintext local files for most threat scenarios.</p>
+
+  <h2>Who should use each tool</h2>
+
+  <div class="who-box">
+    <div class="who-card reflect-card">
+      <h3>Choose Reflect OS if you...</h3>
+      <ul>
+        <li>Want calibration scoring without building and maintaining queries</li>
+        <li>Need structured review prompts to actually close the feedback loop</li>
+        <li>Work on a team and want comparative calibration analytics</li>
+        <li>Make high-stakes decisions that warrant field-level encryption</li>
+        <li>Don't want to spend setup time on plugins and templates</li>
+        <li>Have tried a decision journal before and found the habit didn't stick</li>
+      </ul>
+    </div>
+    <div class="who-card">
+      <h3>Choose Obsidian if you...</h3>
+      <ul>
+        <li>Already use Obsidian as your primary knowledge management system</li>
+        <li>Are comfortable configuring plugins and maintaining templates</li>
+        <li>Prefer local-first storage and owning your files directly</li>
+        <li>Want decisions as one part of a broader linked knowledge base</li>
+        <li>Make decisions infrequently and qualitative notes are sufficient</li>
+        <li>Are willing to invest setup and maintenance time to avoid a subscription</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>Can you use both?</h2>
+
+  <p>Yes, and some professionals do. Obsidian handles the broader knowledge management layer — research notes, meeting notes, linked thinking across projects. Reflect OS handles the decision intelligence layer — structured logging, review cadences, and calibration analytics.</p>
+
+  <p>The workflows don't overlap cleanly because the tools serve different purposes at different levels of abstraction. Where they touch is in the review: some users write qualitative decision notes in Obsidian and log the structured decision metadata (confidence, outcome, review dates) in Reflect OS.</p>
+
+  <h2>FAQ</h2>
+
+  <div class="faq-section">
+    <div class="faq-item">
+      <h3>Can Obsidian be used as a decision journal?</h3>
+      <p>Yes — Obsidian is a capable decision journal for users comfortable with Markdown and plugin configuration. Using templates and the Dataview plugin, you can log decisions, record confidence ratings, and query your vault for overdue reviews. The limitation is that Obsidian won't calculate calibration scores or send proactive review reminders without significant custom setup.</p>
+    </div>
+    <div class="faq-item">
+      <h3>What is the main difference between Reflect OS and Obsidian?</h3>
+      <p>Obsidian is a local-first, Markdown-based note-taking tool with a rich plugin ecosystem. Reflect OS is a purpose-built decision intelligence platform with automatic calibration scoring, structured review cadences, and outcome analytics. Obsidian gives you total control and requires you to build the system; Reflect OS provides the system already built.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Is Obsidian or Reflect OS better for privacy?</h3>
+      <p>Both tools take privacy seriously but in different ways. Obsidian stores files locally by default — no cloud sync unless you use Obsidian Sync or a third-party provider. Reflect OS is cloud-based but uses AES-256 field-level encryption on each decision field. For sensitive decisions, Reflect OS's encryption model provides stronger security against data breaches than local storage, which relies on device security.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Does Obsidian have a calibration tracking plugin?</h3>
+      <p>There is no dedicated calibration tracking plugin in the Obsidian ecosystem as of 2026. You can approximate calibration analysis using Dataview queries that group decisions by confidence band and count correct outcomes, but this requires ongoing manual data entry in a consistent format and does not produce automatic calibration score charts.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Who should use Obsidian for decisions vs Reflect OS?</h3>
+      <p>Obsidian suits professionals who want full control over their notes, are comfortable with Markdown and plugins, and prefer local file storage. It works well for building a personal knowledge base where decisions are one component. Reflect OS suits professionals who want a dedicated decision intelligence system with automatic calibration, structured reviews, and team-level analytics — without the setup overhead.</p>
+    </div>
+  </div>
+
+  <div class="cta-box">
+    <h2>Decision intelligence without the setup overhead</h2>
+    <p>Start logging decisions in Reflect OS today — calibration scoring included from day one.</p>
+    <a href="https://app.reflect-os.com/signup" class="cta-btn">Start free trial</a>
+  </div>
+
+  <div class="related">
+    <h3>Related reading</h3>
+    <ul>
+      <li><a href="/alternatives">All Reflect OS alternatives compared</a></li>
+      <li><a href="/blog/reflect-os-vs-notion">Reflect OS vs Notion for decision tracking</a></li>
+      <li><a href="/what-is-decision-intelligence">What is decision intelligence?</a></li>
+      <li><a href="/blog/confidence-calibration-what-it-means-and-why-it-matters">What is confidence calibration?</a></li>
+      <li><a href="/blog/how-to-build-a-decision-journal">How to build a decision journal that works</a></li>
+      <li><a href="/faq">Reflect OS FAQ</a></li>
+    </ul>
+  </div>
+
+</div>
+
+<script>
+  !function(){if(!window.gr){window.gr=function(){window.gr.q=window.gr.q||[];window.gr.q.push(arguments)};var s=document.createElement("script");s.async=true;s.src="https://app.getreditus.com/gr.js";document.head.appendChild(s)}}();
+  gr("initCustomer", "dead4d4b-98f0-4f26-824e-f8d02b5e856b");
+  gr("track", "pageview");
+</script>
+
+</body>
+</html>

@@ -5,17 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <title>How to run an investment committee process that actually improves over time — Reflect OS</title>
-  <meta name="description" content="Most IC processes make decisions. Almost none get better at them. Here's how structured decision records, outcome checkpoints, and calibration tracking change that." />
+  <meta name="description" content="Most investment committees make decisions but never review them. Here's the process that builds IC intelligence over time and compounds across fund cycles." />
   <meta property="og:type" content="article" />
   <meta property="og:site_name" content="Reflect OS" />
   <meta property="og:title" content="How to run an investment committee process that actually improves over time" />
-  <meta property="og:description" content="Most IC processes make decisions. Almost none get better at them. Here's how structured decision records, outcome checkpoints, and calibration tracking change that." />
+  <meta property="og:description" content="Most investment committees make decisions but never review them. Here's the process that builds IC intelligence over time and compounds across fund cycles." />
   <meta property="og:url" content="https://www.reflect-os.com/blog/investment-committee-process" />
   <meta property="og:image" content="https://www.reflect-os.com/og-image.png" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@reflectos" />
   <meta name="twitter:title" content="How to run an investment committee process that actually improves over time" />
-  <meta name="twitter:description" content="Most IC processes make decisions. Almost none get better at them. Here's how structured decision records, outcome checkpoints, and calibration tracking change that." />
+  <meta name="twitter:description" content="Most investment committees make decisions but never review them. Here's the process that builds IC intelligence over time and compounds across fund cycles." />
   <meta name="twitter:image" content="https://www.reflect-os.com/og-image.png" />
   <link rel="canonical" href="https://www.reflect-os.com/blog/investment-committee-process" />
   <link rel="stylesheet" href="/src/styles/global.css" />
@@ -40,6 +40,39 @@
     .article-pullquote p { font-family: var(--font); font-size: 1.2rem; color: var(--text-primary); margin: 0; font-style: italic; }
   </style>
   <script>(function (w, d, s, p, t) { w.gr = w.gr || function () { w.gr.ce = 60; w.gr.q = w.gr.q || []; w.gr.q.push(arguments); }; p = d.getElementsByTagName(s)[0]; t = d.createElement(s); t.async = true; t.src = "https://script.getreditus.com/v2.js"; p.parentNode.insertBefore(t, p); })(window, document, "script"); gr("initCustomer", "dead4d4b-98f0-4f26-824e-f8d02b5e856b"); gr("track", "pageview");</script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Why do investment committee processes fail to improve over time?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Three specific failure modes show up repeatedly. Committee memory loss: the rationale for a decision made 18 months ago is distributed across decks, emails, and people's heads, so any review is reconstructed rather than recalled. Outcome attribution drift: without a structured record of what was believed at the moment of investment, success gets attributed to the thesis even when macro tailwinds or execution drove the result. Bias accumulation without detection: patterns like overconfidence in a sector go unmeasured because nobody tracks confidence and outcomes at the decision level."}
+      },
+      {
+        "@type": "Question",
+        "name": "What should a structured IC decision record contain?",
+        "acceptedAnswer": {"@type": "Answer", "text": "A well-structured IC record captures: the thesis and its logic, the upside and downside cases explicitly stated, key risks and the logic for discounting them, confidence level at time of commitment on a structured 1-10 scale, situational context, the vote and any dissent, and outcome checkpoints defined at the time of investment at 6, 12, and 24 months with specific questions to be answered at each."}
+      },
+      {
+        "@type": "Question",
+        "name": "How do outcome checkpoints work in practice for investment decisions?",
+        "acceptedAnswer": {"@type": "Answer", "text": "A structured checkpoint asks three questions: what did we expect to be true by this date, what is actually true, and what is the gap and what does it tell us about the quality of our original reasoning? The last question produces learning and requires the original decision record to be specific enough to test against. For investments with long horizons, keep decisions in an unrealised state while gathering outcome data rather than forcing premature closure."}
+      },
+      {
+        "@type": "Question",
+        "name": "What does calibration mean for investment teams and how do you track it?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Calibration is the relationship between your stated confidence and your actual outcomes. A perfectly calibrated decision-maker who says 7 out of 10 achieves good outcomes roughly 70% of the time on those decisions. Tracking calibration requires capturing confidence at the moment of each decision before the outcome is known, scoring outcome quality consistently on the same scale, and having enough decisions in the history to see patterns by category, condition, and context."}
+      },
+      {
+        "@type": "Question",
+        "name": "What security standards should an IC decision record meet?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Investment decisions contain sensitive thinking about specific risks, doubts, and arguments made in the room. Any system for capturing and reviewing this data should be encrypted at rest, server-side only for any AI analysis, never used to train models, and have granular access controls preventing anyone outside the authorised team from accessing the content. An IC record that is not properly secured is a liability."}
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 <nav class="nav">
@@ -163,6 +196,18 @@
         <p style="margin-bottom: 20px; font-size: 0.9rem;">90-day money-back guarantee on all plans.</p>
         <a href="https://app.reflect-os.com/signup" class="btn btn-primary">Get started — 90-day guarantee</a>
         <p style="margin-top: 12px; font-size: 0.8rem; color: var(--text-muted);">Full refund within 90 days if it's not right.</p>
+      </div>
+
+      <div style="margin-top: 48px; margin-bottom: 40px; padding: 24px; background: var(--surface-warm); border: 1px solid var(--border); border-radius: var(--radius-md);">
+        <h4 style="margin: 0 0 16px; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); font-weight: 600;">Related reading</h4>
+        <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px;">
+          <li><a href="/blog/investment-committee-best-practices" style="color: var(--text-primary); text-decoration: none; font-size: 0.95rem; font-weight: 500;">Investment Committee Best Practices That Build Decision Quality &rarr;</a></li>
+          <li><a href="/blog/investment-decision-framework" style="color: var(--text-primary); text-decoration: none; font-size: 0.95rem; font-weight: 500;">Investment Decision Framework: How Top Fund Managers Build Repeatable Processes &rarr;</a></li>
+          <li><a href="/blog/investment-decision-intelligence" style="color: var(--text-primary); text-decoration: none; font-size: 0.95rem; font-weight: 500;">Investment Decision Intelligence: How Fund Managers Track Thesis Quality &rarr;</a></li>
+          <li><a href="/blog/how-investment-managers-track-and-review-decisions" style="color: var(--text-primary); text-decoration: none; font-size: 0.95rem; font-weight: 500;">How Investment Managers Track and Review Decisions &rarr;</a></li>
+          <li><a href="/what-is-decision-intelligence" style="color: var(--text-primary); text-decoration: none; font-size: 0.95rem; font-weight: 500;">What is decision intelligence? &rarr;</a></li>
+          <li><a href="/faq" style="color: var(--text-primary); text-decoration: none; font-size: 0.95rem; font-weight: 500;">Reflect OS FAQ &rarr;</a></li>
+        </ul>
       </div>
 
     </div>
