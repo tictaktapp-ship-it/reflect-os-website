@@ -1,4 +1,4 @@
-User-agent: *
+﻿User-agent: *
 Allow: /
 
 # AI crawlers — explicitly allowed
@@ -27,3 +27,4 @@ User-agent: ChatGPT-User
 Allow: /
 
 Sitemap: https://www.reflect-os.com/sitemap.xml
+Disallow: /marketing/

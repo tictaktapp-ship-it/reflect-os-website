@@ -1,0 +1,302 @@
+[
+  {
+    "file": "blog\\confidence-calibration-the-skill-that-separates-good-leaders.html",
+    "patches": [
+      {
+        "desc": "Title",
+        "old": "<title>Confidence Calibration for Leaders \u00e2\u20ac\u201c How to Measure &amp; Improve It | Reflect OS</title>",
+        "new": "<title>Confidence Calibration: The Skill That Separates Great Leaders (With Examples) | Reflect OS</title>"
+      },
+      {
+        "desc": "Meta description",
+        "old": "Most executives are 20+ points overconfident. Learn how confidence calibration separates great leaders from good \u00e2\u20ac\u201c and how to measure and improve yours.",
+        "new": "Most executives are 20+ points overconfident in their decisions. Learn what confidence calibration is, how to measure yours in 30 days, and the 3 techniques that reliably fix it."
+      },
+      {
+        "desc": "OG title",
+        "old": "<meta property=\"og:title\" content=\"Confidence Calibration for Leaders \u00e2\u20ac\u201c How to Measure &amp; Improve It | Reflect OS\" />",
+        "new": "<meta property=\"og:title\" content=\"Confidence Calibration: The Skill That Separates Great Leaders (With Examples) | Reflect OS\" />"
+      },
+      {
+        "desc": "Twitter title",
+        "old": "<meta name=\"twitter:title\" content=\"Confidence Calibration for Leaders \u00e2\u20ac\u201c How to Measure &amp; Improve It | Reflect OS\" />",
+        "new": "<meta name=\"twitter:title\" content=\"Confidence Calibration: The Skill That Separates Great Leaders (With Examples) | Reflect OS\" />"
+      }
+    ]
+  },
+  {
+    "file": "blog\\confidence-calibration-what-it-means-and-why-it-matters.html",
+    "patches": [
+      {
+        "desc": "Title",
+        "old": "<title>Confidence Calibration: What It Means &amp; How to Measure Yours | Reflect OS</title>",
+        "new": "<title>What Is Confidence Calibration? Definition, Formula and Quick Self-Test | Reflect OS</title>"
+      },
+      {
+        "desc": "Meta description",
+        "old": "Confidence calibration is whether your stated confidence matches actual outcomes. Executives miss by 20+ points on average. Here\u00e2\u20ac\u2122s how to measure and fix it.",
+        "new": "Confidence calibration: the precise definition, the formula, and a 5-minute self-test to find your calibration gap. Used by top investors and executives to measure and improve decision accuracy."
+      },
+      {
+        "desc": "OG title",
+        "old": "<meta property=\"og:title\" content=\"Confidence Calibration: What It Means &amp; How to Measure Yours | Reflect OS\" />",
+        "new": "<meta property=\"og:title\" content=\"What Is Confidence Calibration? Definition, Formula and Quick Self-Test | Reflect OS\" />"
+      },
+      {
+        "desc": "Twitter title",
+        "old": "<meta name=\"twitter:title\" content=\"Confidence Calibration: What It Means &amp; How to Measure Yours | Reflect OS\" />",
+        "new": "<meta name=\"twitter:title\" content=\"What Is Confidence Calibration? Definition, Formula and Quick Self-Test | Reflect OS\" />"
+      }
+    ]
+  },
+  {
+    "file": "blog\\decision-log-template.html",
+    "patches": [
+      {
+        "desc": "Title",
+        "old": "<title>Decision Log Template: 8 Essential Fields That Work | Reflect OS</title>",
+        "new": "<title>Decision Log Template (Free) - 8 Fields, Full Schema and Review Cadence | Reflect OS</title>"
+      },
+      {
+        "desc": "Meta description",
+        "old": "A practical decision log template: 8 essential fields, full schema, and the review cadence that turns logged decisions into lasting intelligence. Free to use.",
+        "new": "Free decision log template: 8 essential fields with a worked example, copy-paste schema for spreadsheets or Notion, and the quarterly review cadence that turns logs into genuine learning."
+      },
+      {
+        "desc": "OG title",
+        "old": "<meta property=\"og:title\" content=\"Decision Log Template: 8 Essential Fields That Work | Reflect OS\" />",
+        "new": "<meta property=\"og:title\" content=\"Decision Log Template (Free) - 8 Fields, Full Schema and Review Cadence | Reflect OS\" />"
+      },
+      {
+        "desc": "Twitter title",
+        "old": "<meta name=\"twitter:title\" content=\"Decision Log Template: 8 Essential Fields That Work | Reflect OS\" />",
+        "new": "<meta name=\"twitter:title\" content=\"Decision Log Template (Free) - 8 Fields, Full Schema and Review Cadence | Reflect OS\" />"
+      }
+    ]
+  },
+  {
+    "file": "blog\\how-to-improve-decision-making.html",
+    "patches": [
+      {
+        "desc": "Title",
+        "old": "<title>How to Improve Decision Making: A Science-Backed Guide for Professionals | Reflect OS</title>",
+        "new": "<title>How to Improve Decision Making: 5 Evidence-Based Habits That Actually Work | Reflect OS</title>"
+      },
+      {
+        "desc": "OG title",
+        "old": "<meta property=\"og:title\" content=\"How to Improve Decision Making: A Science-Backed Guide for Professionals | Reflect OS\" />",
+        "new": "<meta property=\"og:title\" content=\"How to Improve Decision Making: 5 Evidence-Based Habits That Actually Work | Reflect OS\" />"
+      },
+      {
+        "desc": "Twitter title",
+        "old": "<meta name=\"twitter:title\" content=\"How to Improve Decision Making: A Science-Backed Guide for Professionals | Reflect OS\" />",
+        "new": "<meta name=\"twitter:title\" content=\"How to Improve Decision Making: 5 Evidence-Based Habits That Actually Work | Reflect OS\" />"
+      }
+    ]
+  },
+  {
+    "file": "blog\\group-decision-making-tools.html",
+    "patches": [
+      {
+        "desc": "Title",
+        "old": "<title>Group Decision Making: Tools and Frameworks for Getting Teams Aligned | Reflect OS</title>",
+        "new": "<title>Group Decision Making: 4 Structural Fixes That Improve Team Decisions | Reflect OS</title>"
+      },
+      {
+        "desc": "OG title",
+        "old": "<meta property=\"og:title\" content=\"Group Decision Making: Tools and Frameworks for Getting Teams Aligned | Reflect OS\" />",
+        "new": "<meta property=\"og:title\" content=\"Group Decision Making: 4 Structural Fixes That Improve Team Decisions | Reflect OS\" />"
+      },
+      {
+        "desc": "Twitter title",
+        "old": "<meta name=\"twitter:title\" content=\"Group Decision Making: Tools and Frameworks for Getting Teams Aligned | Reflect OS\" />",
+        "new": "<meta name=\"twitter:title\" content=\"Group Decision Making: 4 Structural Fixes That Improve Team Decisions | Reflect OS\" />"
+      }
+    ]
+  },
+  {
+    "file": "decision-intelligence-platform.html",
+    "patches": [
+      {
+        "desc": "Title",
+        "old": "<title>Decision Intelligence Platform: Features &amp; How It Works | Reflect OS</title>",
+        "new": "<title>Decision Intelligence Platform for Executives and Investment Teams | Reflect OS</title>"
+      },
+      {
+        "desc": "Meta description",
+        "old": "Purpose-built decision intelligence platform for executives: capture decisions, measure calibration, track outcomes. From \u00c2\u00a349/month. 90-day guarantee.",
+        "new": "The only decision intelligence platform built for executives and investment teams. Capture decisions in 60s, get automated outcome reviews at 30/90/180 days, and see your exact calibration gaps. From \u00c2\u00a349/month."
+      },
+      {
+        "desc": "OG title",
+        "old": "<meta property=\"og:title\" content=\"Decision Intelligence Platform: Features &amp; How It Works | Reflect OS\" />",
+        "new": "<meta property=\"og:title\" content=\"Decision Intelligence Platform for Executives and Investment Teams | Reflect OS\" />"
+      },
+      {
+        "desc": "Twitter title",
+        "old": "<meta name=\"twitter:title\" content=\"Decision Intelligence Platform: Features &amp; How It Works | Reflect OS\" />",
+        "new": "<meta name=\"twitter:title\" content=\"Decision Intelligence Platform for Executives and Investment Teams | Reflect OS\" />"
+      }
+    ]
+  },
+  {
+    "file": "what-is-decision-intelligence.html",
+    "patches": [
+      {
+        "desc": "Title",
+        "old": "<title>What is Decision Intelligence? Definition, Components and Tools | Reflect OS</title>",
+        "new": "<title>What Is Decision Intelligence? Definition, Examples and How It Works (2026) | Reflect OS</title>"
+      },
+      {
+        "desc": "Meta description",
+        "old": "Decision intelligence is the discipline of turning decision data into measurable improvement. Clear definition, core components, and practical implementation guide.",
+        "new": "Decision intelligence: clear definition, real examples from investment and executive contexts, the 5 core components, and how to implement it in 30 days. The authoritative guide."
+      },
+      {
+        "desc": "OG title",
+        "old": "<meta property=\"og:title\" content=\"What is Decision Intelligence? Definition, Components and Tools\" />",
+        "new": "<meta property=\"og:title\" content=\"What Is Decision Intelligence? Definition, Examples and How It Works (2026) | Reflect OS\" />"
+      },
+      {
+        "desc": "Twitter title",
+        "old": "<meta name=\"twitter:title\" content=\"What is Decision Intelligence? Definition, Components and Tools\" />",
+        "new": "<meta name=\"twitter:title\" content=\"What Is Decision Intelligence? Definition, Examples and How It Works (2026) | Reflect OS\" />"
+      }
+    ]
+  },
+  {
+    "file": "blog\\decision-making-framework.html",
+    "patches": [
+      {
+        "desc": "Title",
+        "old": "<title>Decision-Making Framework: The Complete Guide for Executives | Reflect OS</title>",
+        "new": "<title>Decision-Making Framework: 7 Proven Models Every Executive Should Know (2026) | Reflect OS</title>"
+      },
+      {
+        "desc": "Meta description",
+        "old": "The complete guide to decision-making frameworks for executives \u00e2\u20ac\u201c 7 proven models with real examples, a comparison table, and guidance on when to use each.",
+        "new": "7 decision-making frameworks used by top executives: RAPID, pre-mortem, second-order thinking, decision matrix, regret minimisation, and more. Real examples, comparison table, when to use each."
+      },
+      {
+        "desc": "OG title",
+        "old": "<meta property=\"og:title\" content=\"Decision-Making Framework: The Complete Guide for Executives\" />",
+        "new": "<meta property=\"og:title\" content=\"Decision-Making Framework: 7 Proven Models Every Executive Should Know (2026) | Reflect OS\" />"
+      },
+      {
+        "desc": "Twitter title",
+        "old": "<meta name=\"twitter:title\" content=\"Decision Making Framework: 7 Models Every Leader Should Know (2026 Guide)\" />",
+        "new": "<meta name=\"twitter:title\" content=\"Decision-Making Framework: 7 Proven Models Every Executive Should Know (2026) | Reflect OS\" />"
+      }
+    ]
+  },
+  {
+    "file": "blog\\decision-intelligence-tools-comparison.html",
+    "patches": [
+      {
+        "desc": "Title",
+        "old": "<title>Decision Intelligence Tools Comparison: Complete 2026 Guide | Reflect OS</title>",
+        "new": "<title>Best Decision Intelligence Tools 2026: Honest Comparison and Buyer Guide | Reflect OS</title>"
+      },
+      {
+        "desc": "Meta description",
+        "old": "Decision intelligence tools compared: what each platform offers, where generic tools fall short, and how to choose the right one for your decision workflow in 2026.",
+        "new": "Honest comparison of the best decision intelligence tools in 2026: what to require, red flags to avoid, and how Reflect OS, Notion, Obsidian, and spreadsheets compare on the 5 features that matter."
+      },
+      {
+        "desc": "OG title",
+        "old": "<meta property=\"og:title\" content=\"Decision Intelligence Tools Comparison: Complete 2026 Guide\" />",
+        "new": "<meta property=\"og:title\" content=\"Best Decision Intelligence Tools 2026: Honest Comparison and Buyer Guide | Reflect OS\" />"
+      },
+      {
+        "desc": "Twitter title",
+        "old": "<meta name=\"twitter:title\" content=\"Decision Intelligence Tools Comparison: The Complete 2026 Guide\" />",
+        "new": "<meta name=\"twitter:title\" content=\"Best Decision Intelligence Tools 2026: Honest Comparison and Buyer Guide | Reflect OS\" />"
+      }
+    ]
+  },
+  {
+    "file": "blog\\reflect-os-vs-notion.html",
+    "patches": [
+      {
+        "desc": "Title",
+        "old": "<title>Reflect OS vs Notion for Decision Tracking | Reflect OS</title>",
+        "new": "<title>Reflect OS vs Notion for Decision Tracking: Which Is Better? (2026) | Reflect OS</title>"
+      },
+      {
+        "desc": "Meta description",
+        "old": "Both Notion and Reflect OS can log decisions \u00e2\u20ac\u201c but only Reflect OS measures calibration and tracks outcomes automatically. See which tool fits your needs.",
+        "new": "Notion can log decisions. Reflect OS measures calibration, sends review reminders, and surfaces bias patterns automatically. Honest comparison with feature table, pricing, and verdict."
+      },
+      {
+        "desc": "OG title",
+        "old": "<meta property=\"og:title\" content=\"Reflect OS vs Notion for Decision Tracking | Reflect OS\">",
+        "new": "<meta property=\"og:title\" content=\"Reflect OS vs Notion for Decision Tracking: Which Is Better? (2026) | Reflect OS\">"
+      },
+      {
+        "desc": "Twitter title",
+        "old": "<meta name=\"twitter:title\" content=\"Reflect OS vs Notion for Decision Tracking | Reflect OS\">",
+        "new": "<meta name=\"twitter:title\" content=\"Reflect OS vs Notion for Decision Tracking: Which Is Better? (2026) | Reflect OS\">"
+      }
+    ]
+  },
+  {
+    "file": "blog\\reflect-os-vs-obsidian.html",
+    "patches": [
+      {
+        "desc": "Title",
+        "old": "<title>Reflect OS vs Obsidian: Decision Journal Comparison | Reflect OS</title>",
+        "new": "<title>Reflect OS vs Obsidian for Decision Journaling: Which Actually Improves Decisions? | Reflect OS</title>"
+      },
+      {
+        "desc": "Meta description",
+        "old": "Reflect OS vs Obsidian for decision journaling: features, calibration tracking, and outcome review compared. Which tool actually improves your decisions?",
+        "new": "Obsidian lets you build a decision journal. Reflect OS makes calibration scoring, review reminders, and bias detection automatic. Full comparison with feature table and honest verdict."
+      },
+      {
+        "desc": "OG title",
+        "old": "<meta property=\"og:title\" content=\"Reflect OS vs Obsidian: Decision Journal Comparison | Reflect OS\">",
+        "new": "<meta property=\"og:title\" content=\"Reflect OS vs Obsidian for Decision Journaling: Which Actually Improves Decisions? | Reflect OS\">"
+      },
+      {
+        "desc": "Twitter title",
+        "old": "<meta name=\"twitter:title\" content=\"Reflect OS vs Obsidian: Decision Journal Comparison | Reflect OS\">",
+        "new": "<meta name=\"twitter:title\" content=\"Reflect OS vs Obsidian for Decision Journaling: Which Actually Improves Decisions? | Reflect OS\">"
+      }
+    ]
+  },
+  {
+    "file": "alternatives.html",
+    "patches": [
+      {
+        "desc": "Title",
+        "old": "<title>Reflect OS Alternatives and Comparisons | Reflect OS</title>",
+        "new": "<title>Reflect OS Alternatives: Notion, Obsidian and Spreadsheets Compared Honestly | Reflect OS</title>"
+      },
+      {
+        "desc": "Meta description",
+        "old": "How does Reflect OS compare to Notion, Obsidian, spreadsheets, and physical journals for decision tracking? Honest comparison across five criteria.",
+        "new": "How does Reflect OS compare to Notion, Obsidian, spreadsheets, and journals for decision tracking? Side-by-side feature table, pricing, verdict, and who each tool is actually for."
+      },
+      {
+        "desc": "OG title",
+        "old": "<meta property=\"og:title\" content=\"Reflect OS Alternatives and Comparisons\" />",
+        "new": "<meta property=\"og:title\" content=\"Reflect OS Alternatives: Notion, Obsidian and Spreadsheets Compared Honestly | Reflect OS\" />"
+      },
+      {
+        "desc": "Twitter title",
+        "old": "<meta name=\"twitter:title\" content=\"Reflect OS Alternatives and Comparisons\" />",
+        "new": "<meta name=\"twitter:title\" content=\"Reflect OS Alternatives: Notion, Obsidian and Spreadsheets Compared Honestly | Reflect OS\" />"
+      }
+    ]
+  },
+  {
+    "file": "index.html",
+    "patches": [
+      {
+        "desc": "Meta description",
+        "old": "Reflect OS tracks your decisions, measures confidence calibration, and shows exactly where your judgment is costing you. From \u00c2\u00a349/month. 90-day guarantee.",
+        "new": "Reflect OS captures decisions in 60 seconds, automatically schedules outcome reviews at 30/90/180 days, and shows exactly where your calibration is costing you. From \u00c2\u00a349/month. 90-day guarantee."
+      }
+    ]
+  }
+]

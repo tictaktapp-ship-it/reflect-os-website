@@ -40,6 +40,13 @@
       <p style="margin-top: 16px;">Decision rationale, context fields, and sensitive notes are encrypted at rest using AES-256. These fields are decrypted only inside Reflect OS’s secure, server-side execution environment — for AI analysis and PDF export. Decrypted content is never persisted, never logged, and never leaves the trusted environment.</p>
       <p style="margin-top: 12px;">Structural metadata — decision titles, dates, categories, and status — is stored unencrypted to enable search and filtering. The content of your reasoning is always protected.</p>
       <p style="margin-top: 12px;">We do not use your decision data to train AI models.</p>
+      <div style="margin-top: 28px; background:#0D1117; border-radius:8px; overflow:hidden; box-shadow:0 8px 40px rgba(0,0,0,0.18); border:1px solid rgba(255,255,255,0.08); max-width:700px;">
+        <div style="height:32px; background:#19CBD6; display:flex; align-items:center; padding:0 14px;">
+          <span style="font-size:0.75rem; color:rgba(255,255,255,0.8); font-weight:500; letter-spacing:0.04em;">Encryption Status</span>
+        </div>
+        <img src="/images/Encryption_Status.png" alt="Reflect OS Encryption Status screen showing AES-256-GCM encryption confirmed on all decision content fields" style="max-width:100%; height:auto; display:block;" loading="lazy">
+      </div>
+      <p style="margin-top:10px; font-size:0.82rem; color:var(--text-muted);">The Encryption Status screen in Reflect OS — AES-256-GCM confirmed on all sensitive decision fields.</p>
     </div>
     <div class="security-items">
       <div class="security-item"><div class="security-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg></div><div><h4>AES-256 encryption at rest</h4><p>Sensitive fields encrypted before storage. Decrypted only inside Reflect OS’s secure, server-side execution environment — never persisted, never logged, never leaving the trusted environment.</p></div></div>

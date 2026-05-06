@@ -35,7 +35,11 @@
       "Read(//mnt/**)",
       "Read(//e/reflect-os//**)",
       "Read(//e/reflect-os/**)",
-      "Bash(flutter analyze *)"
+      "Bash(flutter analyze *)",
+      "Bash(cp \"/c/Users/Euan.Pallister/Downloads/Home.png\" \"E:/reflect-os-website/public/images/Home.png\")",
+      "Bash(cp \"/c/Users/Euan.Pallister/Downloads/Decision Lens.png\" \"E:/reflect-os-website/public/images/Decision_Lens.png\")",
+      "Bash(cp \"/c/Users/Euan.Pallister/Downloads/Decision Toolkit.png\" \"E:/reflect-os-website/public/images/Decision_Toolkit.png\")",
+      "Bash(cp \"/c/Users/Euan.Pallister/Downloads/Encryption Status.png\" \"E:/reflect-os-website/public/images/Encryption_Status.png\")"
     ]
   }
 }
