@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <title>Building a Regulatory Decision Framework: How Compliance Teams Document Decisions | Reflect OS</title>
+  <meta name="description" content="A regulatory decision framework is the structured process your compliance team uses to make, document, and review decisions under regulatory scrutiny. Here is how to build one that actually works." />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Reflect OS" />
+  <meta property="og:title" content="Building a Regulatory Decision Framework: How Compliance Teams Document Decisions" />
+  <meta property="og:description" content="A regulatory decision framework is the structured process your compliance team uses to make, document, and review decisions under regulatory scrutiny. Here is how to build one that actually works." />
+  <meta property="og:url" content="https://www.reflect-os.com/blog/regulatory-decision-framework" />
+  <meta property="og:image" content="https://www.reflect-os.com/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@reflectos" />
+  <meta name="twitter:title" content="Building a Regulatory Decision Framework: How Compliance Teams Document Decisions" />
+  <meta name="twitter:description" content="A regulatory decision framework is the structured process your compliance team uses to make, document, and review decisions under regulatory scrutiny. Here is how to build one that actually works." />
+  <meta name="twitter:image" content="https://www.reflect-os.com/og-image.png" />
+  <link rel="canonical" href="https://www.reflect-os.com/blog/regulatory-decision-framework" />
+  <link rel="stylesheet" href="/src/styles/global.css" />
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Article","headline":"Building a Regulatory Decision Framework: How Compliance Teams Document Decisions","description":"A regulatory decision framework is the structured process your compliance team uses to make, document, and review decisions under regulatory scrutiny. Here is how to build one that actually works.","url":"https://www.reflect-os.com/blog/regulatory-decision-framework","datePublished":"2026-05-14","dateModified":"2026-05-14","author":{"@type":"Organization","name":"Reflect OS"},"publisher":{"@type":"Organization","name":"Reflect OS","url":"https://www.reflect-os.com"}}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is a regulatory decision framework?","acceptedAnswer":{"@type":"Answer","text":"A regulatory decision framework is a structured process that compliance teams use to ensure significant regulatory decisions are made, documented, and reviewed in a consistent, defensible way. It defines what types of decisions require formal documentation, what fields must be captured at the time of each decision, who has authority to make different categories of decision, and when and how outcomes are reviewed."}},{"@type":"Question","name":"Why do compliance teams need a decision framework?","acceptedAnswer":{"@type":"Answer","text":"Regulatory bodies including the FCA, SEC, and PRA expect that firms can demonstrate their decision-making process was systematic and evidence-based, not ad hoc. A decision framework creates the structure that makes this demonstrable. Without one, compliance decisions made in good faith may appear arbitrary or undocumented when challenged."}},{"@type":"Question","name":"How does a regulatory decision framework differ from a policy?","acceptedAnswer":{"@type":"Answer","text":"A policy defines what decisions should be made in specific circumstances. A regulatory decision framework defines how those decisions are made, documented, and reviewed regardless of their content. The framework is the governance infrastructure around the decision; the policy is the substantive guidance that informs it."}}]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.reflect-os.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.reflect-os.com/blog"},{"@type":"ListItem","position":3,"name":"Building a Regulatory Decision Framework: How Compliance Teams Document Decisions","item":"https://www.reflect-os.com/blog/regulatory-decision-framework"}]}
+  </script>
+  <style>
+    .article-body { max-width: 680px; margin: 0 auto; }
+    .article-body h2 { margin: 48px 0 16px; }
+    .article-body h3 { margin: 32px 0 12px; }
+    .article-body p { margin-bottom: 20px; font-size: 1.05rem; line-height: 1.75; color: var(--text-secondary); }
+    .article-body strong { color: var(--text-primary); }
+    .article-body ul, .article-body ol { margin-bottom: 20px; padding-left: 24px; }
+    .article-body li { margin-bottom: 8px; font-size: 1.05rem; line-height: 1.75; color: var(--text-secondary); }
+    .article-pullquote { border-left: 3px solid var(--teal); padding: 20px 28px; margin: 40px 0; background: var(--surface-warm); border-radius: 0 var(--radius-md) var(--radius-md) 0; }
+    .article-pullquote p { font-size: 1.2rem; color: var(--text-primary); margin: 0; font-style: italic; }
+    .blog-cta { margin-top: 48px; padding: 32px; background: var(--surface-warm); border: 1px solid var(--border); border-radius: var(--radius-lg); }
+    .blog-cta h3 { margin-bottom: 12px; font-size: 1.1rem; }
+    .blog-cta p { margin-bottom: 20px; font-size: 0.9rem; }
+    .cta-button { display: inline-block; background: var(--teal); color: #fff; padding: 12px 24px; border-radius: var(--radius-md); text-decoration: none; font-weight: 600; font-size: 0.95rem; }
+    .example-box { background: var(--background-elevated); border: 1px solid var(--border); border-left: 3px solid var(--teal); border-radius: 0 var(--radius-md) var(--radius-md) 0; padding: 20px 24px; margin: 24px 0; }
+    .example-box h4 { margin: 0 0 10px; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--teal); font-weight: 600; }
+    .faq-section { margin-top: 64px; }
+    .faq-item { border-top: 1px solid var(--border); padding: 24px 0; }
+    .faq-item h3 { margin: 0 0 12px; font-size: 1rem; color: var(--text-primary); }
+    .faq-item p { margin: 0; font-size: 0.95rem; }
+  </style>
+  <script>(function (w, d, s, p, t) { w.gr = w.gr || function () { w.gr.ce = 60; w.gr.q = w.gr.q || []; w.gr.q.push(arguments); }; p = d.getElementsByTagName(s)[0]; t = d.createElement(s); t.async = true; t.src = "https://script.getreditus.com/v2.js"; p.parentNode.insertBefore(t, p); })(window, document, "script"); gr("initCustomer", "dead4d4b-98f0-4f26-824e-f8d02b5e856b"); gr("track", "pageview");</script>
+</head>
+<body>
+<nav class="nav">
+  <div class="container nav-inner">
+    <a href="/" aria-label="Reflect OS home" style="display: inline-flex; flex-direction: column; align-items: center; text-decoration: none; gap: 3px;">
+      <div style="display: flex; flex-direction: row; align-items: center; gap: 10px;">
+        <img src="/favicon.svg" alt="Reflect OS icon" style="height: 30px; width: auto; display: block;">
+        <span style="font-family: 'DM Sans', sans-serif; font-size: 21px; font-weight: 500; letter-spacing: 2px; color: #0D1117; line-height: 1; white-space: nowrap;">REFLECT</span>
+      </div>
+      <span style="font-family: 'DM Sans', sans-serif; font-size: 7px; font-weight: 300; letter-spacing: 2px; color: #19CBD6; text-align: center; align-self: stretch; line-height: 1; white-space: nowrap;">DECISION INTELLIGENCE OS</span>
+    </a>
+    <ul class="nav-links"><li><a href="/product">Product</a></li><li><a href="/how-it-works">How it works</a></li><li><a href="/use-cases">Use cases</a></li><li><a href="/pricing">Pricing</a></li><li><a href="/security">Security</a></li><li><a href="/about">About</a></li></ul>
+    <div class="nav-ctas"><a href="https://app.reflect-os.com/signin" class="btn btn-ghost btn-sm">Sign in</a><a href="https://app.reflect-os.com/signup" class="btn btn-primary btn-sm">Get started</a></div>
+    <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false" onclick="toggleNav(this)">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <div class="container">
+    <div style="margin-bottom: 12px;"><a href="/blog" style="font-size: 0.85rem; color: var(--text-muted);">&larr; Blog</a></div>
+    <span class="blog-tag" style="display: inline-block; margin-bottom: 16px;">Compliance &amp; Legal</span>
+    <h1 style="max-width: 720px;">Building a Regulatory Decision Framework: How Compliance Teams Document Decisions</h1>
+    <p style="margin-top: 16px;">A regulatory decision framework is the structured process your compliance team uses to make, document, and review decisions under regulatory scrutiny. Here is how to build one that actually works.</p>
+    <div style="margin-top: 24px; font-size: 0.85rem; color: var(--text-muted);">May 2026 &middot; 11 min read</div>
+  </div>
+</div>
+
+<section style="padding-top: 48px; padding-bottom: 96px;">
+  <div class="container">
+    <div class="article-body">
+
+      <p>A regulatory decision framework is not a policy document. It does not tell compliance teams what decisions to make. It tells them how to make, document, and review decisions in a way that produces a defensible record &mdash; the kind that survives supervisory review, audit inquiry, and post-incident scrutiny.</p>
+
+      <p>Most compliance functions have detailed policies but no decision framework. The result is that individual compliance officers make high-quality decisions in isolation, but the organisation cannot demonstrate the systematic, consistent decision-making process that regulators increasingly require.</p>
+
+      <h2>The Four Components of an Effective Regulatory Decision Framework</h2>
+
+      <p>An effective regulatory decision framework has four components. Each one addresses a specific failure mode in how compliance teams currently operate.</p>
+
+      <h3>1. Decision classification</h3>
+
+      <p>Not every compliance task is a decision that requires formal documentation. The framework must define which decisions trigger the formal logging requirement. A practical classification uses two dimensions: regulatory exposure (the probability and severity of regulatory scrutiny if the decision is challenged) and reversibility (how difficult it would be to undo the decision and its consequences).</p>
+
+      <p>Decisions in the high-exposure, low-reversibility quadrant &mdash; breach responses, sanctions exceptions, significant policy interpretations &mdash; require full formal documentation. Decisions in the low-exposure, high-reversibility quadrant can be handled through standard workflow without additional logging.</p>
+
+      <h3>2. Decision authority matrix</h3>
+
+      <p>The framework must specify who has authority to make different categories of compliance decision. Ambiguity about decision authority is one of the most common sources of regulatory exposure &mdash; decisions made by people without the authority to make them, or decisions made without the required approvals, are vulnerable in any subsequent review.</p>
+
+      <p>The authority matrix should specify: who can make each category of decision independently, who must approve decisions above a certain threshold, who must be consulted before a decision is finalised, and who must be informed after a decision is made. This maps closely to the RAPID framework (Recommend, Agree, Perform, Input, Decide) used in organisational decision-making more broadly.</p>
+
+      <h3>3. Structured documentation requirement</h3>
+
+      <p>For decisions in the formal logging category, the framework must specify exactly what must be captured. The minimum fields are: the decision (stated precisely), the regulatory basis, alternatives considered, confidence level, situational context, and outcome review date. These six fields create the contemporaneous record that regulators and auditors require.</p>
+
+      <p>The documentation must happen at the time of the decision &mdash; not as a retrospective exercise. The distinction between a contemporaneous record and a reconstructed one is precisely what supervisory reviews are designed to test. A framework that allows retrospective documentation defeats the purpose of the exercise.</p>
+
+      <h3>4. Outcome review cadence</h3>
+
+      <p>The framework must define when and how decisions are reviewed against their intended outcomes. This is the component most consistently absent from existing compliance governance structures &mdash; and the one that regulators are increasingly focused on. A compliance function that documents its decisions but never reviews their outcomes is not demonstrating evidence-based decision-making; it is demonstrating evidence-based decision-making up to the point of commitment, which is precisely where most organisations already are.</p>
+
+      <p>The outcome review cadence should vary by decision type. High-stakes breach responses may need 30 and 90-day reviews. Policy interpretation decisions may need a 6-month review after the interpretation has been applied in practice. Risk acceptance decisions should be reviewed at the point when the accepted risk was expected to resolve.</p>
+
+      <h2>Implementing the Framework: Common Pitfalls</h2>
+
+      <p>The most common implementation failure is creating a framework that is theoretically comprehensive but practically unusable. A 15-field decision log form may capture everything a regulator could want to see but will be completed inconsistently because the time cost is too high for the compliance team&rsquo;s operational reality.</p>
+
+      <p>The practical solution is to start with six fields and add fields only when a specific regulatory or audit requirement demonstrates the need. A framework that is consistently applied with six fields is significantly more valuable than one that is inconsistently applied with fifteen.</p>
+
+      <p>The second common failure is treating the framework as a documentation exercise rather than a decision governance tool. The outcome review component is not an administrative requirement &mdash; it is the mechanism by which the compliance function learns from its decisions and improves its calibration over time. Organisations that implement the documentation component without the review component get the cost of the framework without most of the benefit.</p>
+
+      <h2>The Regulatory Expectation: What FCA and SEC Reviews Look For</h2>
+
+      <p>FCA supervisory reviews under SMCR increasingly focus on whether individual Senior Managers can demonstrate that their decisions were made through a systematic, documented process. The expectation is not perfection &mdash; it is that the decision-making process was reasonable, that relevant information was considered, that alternatives were assessed, and that the decision was made by someone with the authority to make it.</p>
+
+      <p>SEC examination processes similarly focus on whether the firm&rsquo;s compliance function demonstrates systematic decision-making. The examination question is not just whether the right decision was made, but whether the decision was made in a way that shows a functioning compliance programme &mdash; one that considers evidence, acknowledges uncertainty, and reviews its own outcomes.</p>
+
+      <p>A regulatory decision framework, consistently applied, creates exactly this demonstration.</p>
+
+      <div style="margin-top: 48px; margin-bottom: 40px; padding: 24px; background: var(--surface-warm); border: 1px solid var(--border); border-radius: var(--radius-md);">
+        <h4 style="margin: 0 0 16px; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); font-weight: 600;">Related reading</h4>
+        <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px;">
+          <li><a href="/use-cases/legal-and-compliance" style="color: var(--text-primary); text-decoration: none; font-size: 0.95rem; font-weight: 500;">Decision intelligence for legal and compliance teams &rarr;</a></li>
+          <li><a href="/blog/compliance-decision-log" style="color: var(--text-primary); text-decoration: none; font-size: 0.95rem; font-weight: 500;">What is a compliance decision log? Template and best practices &rarr;</a></li>
+          <li><a href="/blog/audit-trail-software-for-decisions" style="color: var(--text-primary); text-decoration: none; font-size: 0.95rem; font-weight: 500;">Audit trail software for decision-making &rarr;</a></li>
+          <li><a href="/blog/decision-making-framework" style="color: var(--text-primary); text-decoration: none; font-size: 0.95rem; font-weight: 500;">Decision-making frameworks: the complete guide &rarr;</a></li>
+          <li><a href="/security" style="color: var(--text-primary); text-decoration: none; font-size: 0.95rem; font-weight: 500;">Reflect OS security and encryption &rarr;</a></li>
+        </ul>
+      </div>
+
+      <div class="blog-cta">
+        <h3>Put this into practice with Reflect OS</h3>
+        <p>Reflect OS gives compliance teams the structured decision logging system to implement a regulatory decision framework in practice &mdash; with all required fields, automatic review reminders, and encrypted storage for sensitive regulatory data.</p>
+        <a href="https://app.reflect-os.com/signup" class="cta-button">Get started &mdash; 90-day guarantee</a>
+      </div>
+
+      <div class="faq-section">
+        <h2>Frequently asked questions</h2>
+        <div class="faq-item">
+          <h3>What is a regulatory decision framework?</h3>
+          <p>A regulatory decision framework is a structured process that compliance teams use to ensure significant regulatory decisions are made, documented, and reviewed in a consistent, defensible way. It defines what types of decisions require formal documentation, what fields must be captured at the time of each decision, who has authority to make different categories of decision, and when and how outcomes are reviewed.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Why do compliance teams need a decision framework?</h3>
+          <p>Regulatory bodies including the FCA, SEC, and PRA expect that firms can demonstrate their decision-making process was systematic and evidence-based, not ad hoc. A decision framework creates the structure that makes this demonstrable. Without one, compliance decisions made in good faith may appear arbitrary or undocumented when challenged.</p>
+        </div>
+        <div class="faq-item">
+          <h3>How does a regulatory decision framework differ from a policy?</h3>
+          <p>A policy defines what decisions should be made in specific circumstances. A regulatory decision framework defines how those decisions are made, documented, and reviewed regardless of their content. The framework is the governance infrastructure around the decision; the policy is the substantive guidance that informs it.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="footer"><div class="container"><div class="footer-grid"><div><div class="footer-brand">Reflect OS</div><p class="footer-desc">Decision intelligence for high-stakes teams.</p></div><div class="footer-col"><h5>Product</h5><ul class="footer-links"><li><a href="/product">Overview</a></li><li><a href="/how-it-works">How it works</a></li><li><a href="/pricing">Pricing</a></li></ul></div><div class="footer-col"><h5>Company</h5><ul class="footer-links"><li><a href="/about">About</a></li><li><a href="/contact">Contact</a></li><li><a href="/privacy">Privacy</a></li></ul></div></div><p class="footer-guarantee">90-day money-back guarantee on all plans.</p>
+    <div class="footer-bottom"><span>&copy; 2026 Reflect OS.</span><div class="footer-legal"><a href="/privacy">Privacy</a><a href="/terms">Terms</a></div></div></div></footer>
+<script>
+function toggleNav(btn) {
+  const expanded = btn.getAttribute('aria-expanded') === 'true';
+  btn.setAttribute('aria-expanded', String(!expanded));
+  const links = document.querySelector('.nav-links');
+  if (links) links.classList.toggle('open');
+}
+document.addEventListener('click', function(e) {
+  const links = document.querySelector('.nav-links');
+  const toggle = document.querySelector('.nav-hamburger');
+  if (links && links.classList.contains('open') && toggle && !toggle.contains(e.target) && !links.contains(e.target)) {
+    links.classList.remove('open');
+    toggle.setAttribute('aria-expanded', 'false');
+  }
+});
+</script>
+</body>
+</html>

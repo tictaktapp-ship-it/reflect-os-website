@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <title>Startup Post-Mortems That Actually Work: A Decision-First Approach | Reflect OS</title>
+  <meta name="description" content="Most startup post-mortems produce a list of things that went wrong and change nothing. Here is the decision-first approach that produces genuine learning and measurable improvement." />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Reflect OS" />
+  <meta property="og:title" content="Startup Post-Mortems That Actually Work: A Decision-First Approach" />
+  <meta property="og:description" content="Most startup post-mortems produce a list of things that went wrong and change nothing. Here is the decision-first approach that produces genuine learning and measurable improvement." />
+  <meta property="og:url" content="https://www.reflect-os.com/blog/startup-post-mortem-decisions" />
+  <meta property="og:image" content="https://www.reflect-os.com/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@reflectos" />
+  <meta name="twitter:title" content="Startup Post-Mortems That Actually Work: A Decision-First Approach" />
+  <meta name="twitter:description" content="Most startup post-mortems produce a list of things that went wrong and change nothing. Here is the decision-first approach that produces genuine learning and measurable improvement." />
+  <meta name="twitter:image" content="https://www.reflect-os.com/og-image.png" />
+  <link rel="canonical" href="https://www.reflect-os.com/blog/startup-post-mortem-decisions" />
+  <link rel="stylesheet" href="/src/styles/global.css" />
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Article","headline":"Startup Post-Mortems That Actually Work: A Decision-First Approach","description":"Most startup post-mortems produce a list of things that went wrong and change nothing. Here is the decision-first approach that produces genuine learning and measurable improvement.","url":"https://www.reflect-os.com/blog/startup-post-mortem-decisions","datePublished":"2026-05-14","dateModified":"2026-05-14","author":{"@type":"Organization","name":"Reflect OS"},"publisher":{"@type":"Organization","name":"Reflect OS","url":"https://www.reflect-os.com"}}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What makes a startup post-mortem effective?","acceptedAnswer":{"@type":"Answer","text":"An effective startup post-mortem is anchored to the original decisions that drove the outcome, not to the outcome itself. The review question is not just what went wrong but what decisions made this outcome more or less likely. This requires having the original decision records available at review time: the rationale, the alternatives considered, the confidence level, and the situational context at the time the decision was made."}},{"@type":"Question","name":"How often should startups run post-mortems?","acceptedAnswer":{"@type":"Answer","text":"Formal post-mortems are most valuable after significant outcomes: a product launch, a fundraising process, a major customer win or loss, a team restructuring. The cadence is event-driven rather than calendar-driven. The supporting practice of continuous decision logging means the evidence is available whenever a post-mortem is warranted, rather than requiring a separate data collection exercise."}},{"@type":"Question","name":"What is the difference between a post-mortem and a pre-mortem?","acceptedAnswer":{"@type":"Answer","text":"A pre-mortem is run before a decision is finalised: you assume failure and identify the risks most likely to cause it. A post-mortem is run after an outcome is known: you review the decision record to understand what drove the outcome and what should change. Both practices improve decision quality, but through different mechanisms. The pre-mortem improves the decision before it is made. The post-mortem improves the process for the next equivalent decision."}}]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.reflect-os.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.reflect-os.com/blog"},{"@type":"ListItem","position":3,"name":"Startup Post-Mortems That Actually Work: A Decision-First Approach","item":"https://www.reflect-os.com/blog/startup-post-mortem-decisions"}]}
+  </script>
+  <style>
+    .article-body { max-width: 680px; margin: 0 auto; }
+    .article-body h2 { margin: 48px 0 16px; }
+    .article-body h3 { margin: 32px 0 12px; }
+    .article-body p { margin-bottom: 20px; font-size: 1.05rem; line-height: 1.75; color: var(--text-secondary); }
+    .article-body strong { color: var(--text-primary); }
+    .article-body ul, .article-body ol { margin-bottom: 20px; padding-left: 24px; }
+    .article-body li { margin-bottom: 8px; font-size: 1.05rem; line-height: 1.75; color: var(--text-secondary); }
+    .article-pullquote { border-left: 3px solid var(--teal); padding: 20px 28px; margin: 40px 0; background: var(--surface-warm); border-radius: 0 var(--radius-md) var(--radius-md) 0; }
+    .article-pullquote p { font-size: 1.2rem; color: var(--text-primary); margin: 0; font-style: italic; }
+    .blog-cta { margin-top: 48px; padding: 32px; background: var(--surface-warm); border: 1px solid var(--border); border-radius: var(--radius-lg); }
+    .blog-cta h3 { margin-bottom: 12px; font-size: 1.1rem; }
+    .blog-cta p { margin-bottom: 20px; font-size: 0.9rem; }
+    .cta-button { display: inline-block; background: var(--teal); color: #fff; padding: 12px 24px; border-radius: var(--radius-md); text-decoration: none; font-weight: 600; font-size: 0.95rem; }
+    .example-box { background: var(--background-elevated); border: 1px solid var(--border); border-left: 3px solid var(--teal); border-radius: 0 var(--radius-md) var(--radius-md) 0; padding: 20px 24px; margin: 24px 0; }
+    .example-box h4 { margin: 0 0 10px; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--teal); font-weight: 600; }
+    .faq-section { margin-top: 64px; }
+    .faq-item { border-top: 1px solid var(--border); padding: 24px 0; }
+    .faq-item h3 { margin: 0 0 12px; font-size: 1rem; color: var(--text-primary); }
+    .faq-item p { margin: 0; font-size: 0.95rem; }
+  </style>
+  <script>(function (w, d, s, p, t) { w.gr = w.gr || function () { w.gr.ce = 60; w.gr.q = w.gr.q || []; w.gr.q.push(arguments); }; p = d.getElementsByTagName(s)[0]; t = d.createElement(s); t.async = true; t.src = "https://script.getreditus.com/v2.js"; p.parentNode.insertBefore(t, p); })(window, document, "script"); gr("initCustomer", "dead4d4b-98f0-4f26-824e-f8d02b5e856b"); gr("track", "pageview");</script>
+</head>
+<body>
+<nav class="nav">
+  <div class="container nav-inner">
+    <a href="/" aria-label="Reflect OS home" style="display: inline-flex; flex-direction: column; align-items: center; text-decoration: none; gap: 3px;">
+      <div style="display: flex; flex-direction: row; align-items: center; gap: 10px;">
+        <img src="/favicon.svg" alt="Reflect OS icon" style="height: 30px; width: auto; display: block;">
+        <span style="font-family: 'DM Sans', sans-serif; font-size: 21px; font-weight: 500; letter-spacing: 2px; color: #0D1117; line-height: 1; white-space: nowrap;">REFLECT</span>
+      </div>
+      <span style="font-family: 'DM Sans', sans-serif; font-size: 7px; font-weight: 300; letter-spacing: 2px; color: #19CBD6; text-align: center; align-self: stretch; line-height: 1; white-space: nowrap;">DECISION INTELLIGENCE OS</span>
+    </a>
+    <ul class="nav-links"><li><a href="/product">Product</a></li><li><a href="/how-it-works">How it works</a></li><li><a href="/use-cases">Use cases</a></li><li><a href="/pricing">Pricing</a></li><li><a href="/security">Security</a></li><li><a href="/about">About</a></li></ul>
+    <div class="nav-ctas"><a href="https://app.reflect-os.com/signin" class="btn btn-ghost btn-sm">Sign in</a><a href="https://app.reflect-os.com/signup" class="btn btn-primary btn-sm">Get started</a></div>
+    <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false" onclick="toggleNav(this)">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <div class="container">
+    <div style="margin-bottom: 12px;"><a href="/blog" style="font-size: 0.85rem; color: var(--text-muted);">&larr; Blog</a></div>
+    <span class="blog-tag" style="display: inline-block; margin-bottom: 16px;">Startups &amp; Founders</span>
+    <h1 style="max-width: 720px;">Startup Post-Mortems That Actually Work: A Decision-First Approach</h1>
+    <p style="margin-top: 16px;">Most startup post-mortems produce a list of things that went wrong and change nothing. Here is the decision-first approach that produces genuine learning and measurable improvement.</p>
+    <div style="margin-top: 24px; font-size: 0.85rem; color: var(--text-muted);">May 2026 &middot; 11 min read</div>
+  </div>
+</div>
+
+<section style="padding-top: 48px; padding-bottom: 96px;">
+  <div class="container">
+    <div class="article-body">
+
+      <p>The standard startup post-mortem follows a predictable pattern. Something significant happened &mdash; a failed launch, a missed fundraise, a key hire who didn&rsquo;t work out. A meeting is called. The team lists what went wrong. Someone captures the learnings in a document. The document is filed. Three months later, none of it has changed anything.</p>
+
+      <p>The problem is not with the post-mortem as a concept. It is with what happens when a post-mortem is run without structured decision records to anchor it. Without access to the original rationale &mdash; what was decided, why, and with what confidence &mdash; the post-mortem review is dominated by reconstructed memory. And reconstructed memory, as decades of research in cognitive psychology has established, is self-serving, incomplete, and unreliable as a basis for genuine learning.</p>
+
+      <h2>The Decision-First Post-Mortem</h2>
+
+      <p>A decision-first post-mortem starts from the decision record, not from the outcome. Before the post-mortem meeting, the facilitator pulls the decision log entries relevant to the outcome being reviewed. For each significant decision, the review examines: what was the original rationale? What alternatives were considered and why were they rejected? What was the confidence level at the time? What did the outcome reveal about the quality of that reasoning?</p>
+
+      <p>This structure changes the post-mortem conversation from &ldquo;what went wrong?&rdquo; &mdash; which invites defensive reconstruction &mdash; to &ldquo;where did our predictions diverge from what actually happened?&rdquo; &mdash; which invites genuine examination of reasoning quality. The first question produces a list of problems. The second produces insight into the specific decision processes that need to change.</p>
+
+      <h2>Three Types of Post-Mortem Every Startup Should Run</h2>
+
+      <h3>The launch post-mortem</h3>
+      <p>Anchored to the decisions made during product development and go-to-market planning. The review examines: which assumptions about customer behaviour, market readiness, and product-market fit were accurate and which were not? Which decisions in the build and launch sequence most significantly affected the outcome? Where was confidence well-calibrated and where was it systematically off?</p>
+
+      <div class="example-box">
+        <h4>Launch post-mortem in practice</h4>
+        <p style="margin: 0; font-size: 0.95rem; color: var(--text-secondary);">A B2B SaaS company logged its product launch decisions over a 6-month development cycle. The post-mortem revealed that the most significant outcome driver was not product quality (confidence 8/10, outcome 7.5/10 &mdash; well-calibrated) but enterprise sales cycle length (confidence 6/10, outcome 3/10 &mdash; badly miscalibrated). The team had assumed a 3-month sales cycle; the actual average was 7 months. The post-mortem changed the company&rsquo;s go-to-market timeline, pricing structure, and runway requirements for the next launch &mdash; specific, actionable changes anchored to a specific miscalibration.</p>
+      </div>
+
+      <h3>The fundraising post-mortem</h3>
+      <p>Run after every fundraising process, successful or not. Anchored to the decisions made about timing, positioning, investor targeting, and terms. The review examines: where did investor feedback reveal assumptions that were wrong about the market, the product, or the team narrative? Which investors turned out to be the right fit and why? What would the optimal process have looked like with the benefit of outcome data?</p>
+
+      <h3>The team decision post-mortem</h3>
+      <p>Run after significant hiring outcomes &mdash; both misses and strong successes. Hiring decisions are the category where founders are most systematically overconfident. The team decision post-mortem examines the specific signals in the hiring process that predicted the outcome, and builds pattern recognition that improves the next hire. Without logged decision records from the hiring process, this pattern recognition cannot be built systematically.</p>
+
+      <h2>The Structural Change That Makes Post-Mortems Work</h2>
+
+      <p>The post-mortem is a review mechanism. Its effectiveness depends entirely on the quality of the evidence available to review. Teams that run post-mortems without structured decision records are working from incomplete, unreliable data. Teams that maintain structured decision logs have the original rationale, confidence levels, and alternative analyses available at review time.</p>
+
+      <p>The structural change is simple: start logging decisions now, before the next significant outcome. The 3&ndash;5 minutes per decision invested in logging creates the evidence base that makes every subsequent post-mortem materially more effective. It also creates the calibration data that makes the patterns from one post-mortem visible across multiple post-mortems &mdash; which is where the compounding learning value lives.</p>
+
+      <div style="margin-top: 48px; margin-bottom: 40px; padding: 24px; background: var(--surface-warm); border: 1px solid var(--border); border-radius: var(--radius-md);">
+        <h4 style="margin: 0 0 16px; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); font-weight: 600;">Related reading</h4>
+        <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px;">
+          <li><a href="/use-cases/startups" style="color: var(--text-primary); text-decoration: none; font-size: 0.95rem; font-weight: 500;">Decision intelligence for startup founders &rarr;</a></li>
+          <li><a href="/blog/startup-decision-framework" style="color: var(--text-primary); text-decoration: none; font-size: 0.95rem; font-weight: 500;">Decision frameworks for founders &rarr;</a></li>
+          <li><a href="/blog/founder-decision-journal" style="color: var(--text-primary); text-decoration: none; font-size: 0.95rem; font-weight: 500;">Why every founder needs a decision journal &rarr;</a></li>
+          <li><a href="/blog/board-meeting-decision-log" style="color: var(--text-primary); text-decoration: none; font-size: 0.95rem; font-weight: 500;">Using a decision log to improve board meetings &rarr;</a></li>
+          <li><a href="/blog/decision-making-framework" style="color: var(--text-primary); text-decoration: none; font-size: 0.95rem; font-weight: 500;">Decision-making frameworks: the complete guide &rarr;</a></li>
+        </ul>
+      </div>
+
+      <div class="blog-cta">
+        <h3>Put this into practice with Reflect OS</h3>
+        <p>Reflect OS creates the decision record that makes post-mortems actually work: structured rationale capture, alternatives considered, confidence ratings, and automatic outcome review scheduling. Start logging before the next significant decision.</p>
+        <a href="https://app.reflect-os.com/signup" class="cta-button">Get started &mdash; 90-day guarantee</a>
+      </div>
+
+      <div class="faq-section">
+        <h2>Frequently asked questions</h2>
+        <div class="faq-item">
+          <h3>What makes a startup post-mortem effective?</h3>
+          <p>An effective startup post-mortem is anchored to the original decisions that drove the outcome, not to the outcome itself. The review question is not just what went wrong but what decisions made this outcome more or less likely. This requires having the original decision records available at review time: the rationale, the alternatives considered, the confidence level, and the situational context at the time the decision was made.</p>
+        </div>
+        <div class="faq-item">
+          <h3>How often should startups run post-mortems?</h3>
+          <p>Formal post-mortems are most valuable after significant outcomes: a product launch, a fundraising process, a major customer win or loss, a team restructuring. The cadence is event-driven rather than calendar-driven. The supporting practice of continuous decision logging means the evidence is available whenever a post-mortem is warranted, rather than requiring a separate data collection exercise.</p>
+        </div>
+        <div class="faq-item">
+          <h3>What is the difference between a post-mortem and a pre-mortem?</h3>
+          <p>A pre-mortem is run before a decision is finalised: you assume failure and identify the risks most likely to cause it. A post-mortem is run after an outcome is known: you review the decision record to understand what drove the outcome and what should change. Both practices improve decision quality, but through different mechanisms. The pre-mortem improves the decision before it is made. The post-mortem improves the process for the next equivalent decision.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="footer"><div class="container"><div class="footer-grid"><div><div class="footer-brand">Reflect OS</div><p class="footer-desc">Decision intelligence for high-stakes teams.</p></div><div class="footer-col"><h5>Product</h5><ul class="footer-links"><li><a href="/product">Overview</a></li><li><a href="/how-it-works">How it works</a></li><li><a href="/pricing">Pricing</a></li></ul></div><div class="footer-col"><h5>Company</h5><ul class="footer-links"><li><a href="/about">About</a></li><li><a href="/contact">Contact</a></li><li><a href="/privacy">Privacy</a></li></ul></div></div><p class="footer-guarantee">90-day money-back guarantee on all plans.</p>
+    <div class="footer-bottom"><span>&copy; 2026 Reflect OS.</span><div class="footer-legal"><a href="/privacy">Privacy</a><a href="/terms">Terms</a></div></div></div></footer>
+<script>
+function toggleNav(btn) {
+  const expanded = btn.getAttribute('aria-expanded') === 'true';
+  btn.setAttribute('aria-expanded', String(!expanded));
+  const links = document.querySelector('.nav-links');
+  if (links) links.classList.toggle('open');
+}
+document.addEventListener('click', function(e) {
+  const links = document.querySelector('.nav-links');
+  const toggle = document.querySelector('.nav-hamburger');
+  if (links && links.classList.contains('open') && toggle && !toggle.contains(e.target) && !links.contains(e.target)) {
+    links.classList.remove('open');
+    toggle.setAttribute('aria-expanded', 'false');
+  }
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <title>What Is a Compliance Decision Log? Template and Best Practices | Reflect OS</title>
+  <meta name="description" content="A compliance decision log captures the rationale, alternatives, and confidence behind every significant regulatory decision. Here is what to include, a template, and how to make it work in practice." />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Reflect OS" />
+  <meta property="og:title" content="What Is a Compliance Decision Log? Template and Best Practices" />
+  <meta property="og:description" content="A compliance decision log captures the rationale, alternatives, and confidence behind every significant regulatory decision. Here is what to include, a template, and how to make it work in practice." />
+  <meta property="og:url" content="https://www.reflect-os.com/blog/compliance-decision-log" />
+  <meta property="og:image" content="https://www.reflect-os.com/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@reflectos" />
+  <meta name="twitter:title" content="What Is a Compliance Decision Log? Template and Best Practices" />
+  <meta name="twitter:description" content="A compliance decision log captures the rationale, alternatives, and confidence behind every significant regulatory decision. Here is what to include, a template, and how to make it work in practice." />
+  <meta name="twitter:image" content="https://www.reflect-os.com/og-image.png" />
+  <link rel="canonical" href="https://www.reflect-os.com/blog/compliance-decision-log" />
+  <link rel="stylesheet" href="/src/styles/global.css" />
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Article","headline":"What Is a Compliance Decision Log? Template and Best Practices","description":"A compliance decision log captures the rationale, alternatives, and confidence behind every significant regulatory decision. Here is what to include, a template, and how to make it work in practice.","url":"https://www.reflect-os.com/blog/compliance-decision-log","datePublished":"2026-05-14","dateModified":"2026-05-14","author":{"@type":"Organization","name":"Reflect OS"},"publisher":{"@type":"Organization","name":"Reflect OS","url":"https://www.reflect-os.com"}}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is a compliance decision log?","acceptedAnswer":{"@type":"Answer","text":"A compliance decision log is a structured record of significant regulatory and compliance decisions that captures not just the outcome but the rationale behind it, the alternatives considered, the confidence level at the time, and the contextual circumstances. Its purpose is to create a contemporaneous, defensible record that can satisfy regulatory inquiry, audit review, or post-incident scrutiny."}},{"@type":"Question","name":"What should a compliance decision log include?","acceptedAnswer":{"@type":"Answer","text":"A compliance decision log should include: the decision itself stated precisely, the date and decision-maker, the regulatory or policy basis for the decision, the alternatives considered and why they were rejected, the confidence level in the decision at the time it was made, any situational context that affected the decision, and scheduled outcome reviews to assess whether the decision achieved its intended effect."}},{"@type":"Question","name":"Is a compliance decision log a legal requirement?","acceptedAnswer":{"@type":"Answer","text":"A compliance decision log is not universally mandated by name, but the FCA Senior Managers and Certification Regime, SEC examination standards, and most internal audit frameworks require that significant decisions can be traced to documented rationale made at the time. A structured decision log is the most reliable way to satisfy this requirement."}},{"@type":"Question","name":"How does Reflect OS support compliance decision logging?","acceptedAnswer":{"@type":"Answer","text":"Reflect OS provides a structured decision logging system with dedicated fields for rationale, alternatives considered, confidence level, and situational context. Every decision is timestamped at creation. Shareable decision briefs can be generated for regulatory inquiries via secure expiring links, and all data is encrypted at rest using AES-256."}}]}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.reflect-os.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://www.reflect-os.com/blog"},{"@type":"ListItem","position":3,"name":"What Is a Compliance Decision Log? Template and Best Practices","item":"https://www.reflect-os.com/blog/compliance-decision-log"}]}
+  </script>
+  <style>
+    .article-body { max-width: 680px; margin: 0 auto; }
+    .article-body h2 { margin: 48px 0 16px; }
+    .article-body h3 { margin: 32px 0 12px; }
+    .article-body p { margin-bottom: 20px; font-size: 1.05rem; line-height: 1.75; color: var(--text-secondary); }
+    .article-body strong { color: var(--text-primary); }
+    .article-body ul, .article-body ol { margin-bottom: 20px; padding-left: 24px; }
+    .article-body li { margin-bottom: 8px; font-size: 1.05rem; line-height: 1.75; color: var(--text-secondary); }
+    .article-pullquote { border-left: 3px solid var(--teal); padding: 20px 28px; margin: 40px 0; background: var(--surface-warm); border-radius: 0 var(--radius-md) var(--radius-md) 0; }
+    .article-pullquote p { font-size: 1.2rem; color: var(--text-primary); margin: 0; font-style: italic; }
+    .blog-cta { margin-top: 48px; padding: 32px; background: var(--surface-warm); border: 1px solid var(--border); border-radius: var(--radius-lg); }
+    .blog-cta h3 { margin-bottom: 12px; font-size: 1.1rem; }
+    .blog-cta p { margin-bottom: 20px; font-size: 0.9rem; }
+    .cta-button { display: inline-block; background: var(--teal); color: #fff; padding: 12px 24px; border-radius: var(--radius-md); text-decoration: none; font-weight: 600; font-size: 0.95rem; }
+    .example-box { background: var(--background-elevated); border: 1px solid var(--border); border-left: 3px solid var(--teal); border-radius: 0 var(--radius-md) var(--radius-md) 0; padding: 20px 24px; margin: 24px 0; }
+    .example-box h4 { margin: 0 0 10px; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--teal); font-weight: 600; }
+    .faq-section { margin-top: 64px; }
+    .faq-item { border-top: 1px solid var(--border); padding: 24px 0; }
+    .faq-item h3 { margin: 0 0 12px; font-size: 1rem; color: var(--text-primary); }
+    .faq-item p { margin: 0; font-size: 0.95rem; }
+  </style>
+  <script>(function (w, d, s, p, t) { w.gr = w.gr || function () { w.gr.ce = 60; w.gr.q = w.gr.q || []; w.gr.q.push(arguments); }; p = d.getElementsByTagName(s)[0]; t = d.createElement(s); t.async = true; t.src = "https://script.getreditus.com/v2.js"; p.parentNode.insertBefore(t, p); })(window, document, "script"); gr("initCustomer", "dead4d4b-98f0-4f26-824e-f8d02b5e856b"); gr("track", "pageview");</script>
+</head>
+<body>
+<nav class="nav">
+  <div class="container nav-inner">
+    <a href="/" aria-label="Reflect OS home" style="display: inline-flex; flex-direction: column; align-items: center; text-decoration: none; gap: 3px;">
+      <div style="display: flex; flex-direction: row; align-items: center; gap: 10px;">
+        <img src="/favicon.svg" alt="Reflect OS icon" style="height: 30px; width: auto; display: block;">
+        <span style="font-family: 'DM Sans', sans-serif; font-size: 21px; font-weight: 500; letter-spacing: 2px; color: #0D1117; line-height: 1; white-space: nowrap;">REFLECT</span>
+      </div>
+      <span style="font-family: 'DM Sans', sans-serif; font-size: 7px; font-weight: 300; letter-spacing: 2px; color: #19CBD6; text-align: center; align-self: stretch; line-height: 1; white-space: nowrap;">DECISION INTELLIGENCE OS</span>
+    </a>
+    <ul class="nav-links"><li><a href="/product">Product</a></li><li><a href="/how-it-works">How it works</a></li><li><a href="/use-cases">Use cases</a></li><li><a href="/pricing">Pricing</a></li><li><a href="/security">Security</a></li><li><a href="/about">About</a></li></ul>
+    <div class="nav-ctas"><a href="https://app.reflect-os.com/signin" class="btn btn-ghost btn-sm">Sign in</a><a href="https://app.reflect-os.com/signup" class="btn btn-primary btn-sm">Get started</a></div>
+    <button class="nav-hamburger" aria-label="Open menu" aria-expanded="false" onclick="toggleNav(this)">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <div class="container">
+    <div style="margin-bottom: 12px;"><a href="/blog" style="font-size: 0.85rem; color: var(--text-muted);">&larr; Blog</a></div>
+    <span class="blog-tag" style="display: inline-block; margin-bottom: 16px;">Compliance &amp; Legal</span>
+    <h1 style="max-width: 720px;">What Is a Compliance Decision Log? Template and Best Practices</h1>
+    <p style="margin-top: 16px;">A compliance decision log captures the rationale, alternatives, and confidence behind every significant regulatory decision. Here is what to include, a template, and how to make it work in practice.</p>
+    <div style="margin-top: 24px; font-size: 0.85rem; color: var(--text-muted);">May 2026 &middot; 12 min read</div>
+  </div>
+</div>
+
+<section style="padding-top: 48px; padding-bottom: 96px;">
+  <div class="container">
+    <div class="article-body">
+
+      <p>A compliance decision log is one of the most practically valuable tools a legal or compliance function can implement &mdash; and one of the most consistently absent. Organisations invest heavily in policy, procedure, and governance frameworks. They invest almost nothing in the structured documentation of the decisions made within those frameworks. The gap between the two is where regulatory exposure lives.</p>
+
+      <p>This guide covers what a compliance decision log is, what it must contain, a template you can implement immediately, and how to embed the practice without adding unsustainable documentation burden to your team.</p>
+
+      <h2>Why Most Compliance Teams Don't Have One</h2>
+
+      <p>The absence of compliance decision logs is almost never a deliberate choice. It is the product of a gap between what governance frameworks require in principle and what teams actually have time to produce in practice. When a regulatory decision needs to be made, the priority is making the decision correctly &mdash; not documenting it in a format that will survive an inquiry two years later.</p>
+
+      <p>The result is that when an inquiry does arrive &mdash; whether from the FCA, the SEC, an internal audit function, or a post-incident review &mdash; the reconstruction of decision rationale happens from email chains, meeting minutes, and memory. These sources are unreliable, self-serving, and precisely what regulators are trained to scrutinise for inconsistency.</p>
+
+      <p>The solution is not more documentation burden. It is structured documentation that happens as a byproduct of the decision-making process itself &mdash; at the moment the decision is made, in 5 minutes, in a format that is immediately usable for every subsequent review.</p>
+
+      <h2>What a Compliance Decision Log Must Contain</h2>
+
+      <p>The minimum viable compliance decision log contains six fields. Each one addresses a specific question that regulators, auditors, and post-incident reviewers ask:</p>
+
+      <ul>
+        <li><strong>The decision</strong> &mdash; stated precisely enough that someone reading it 24 months later understands the exact commitment made. Not &ldquo;we addressed the AML concern&rdquo; but &ldquo;we approved the transaction on the basis that the enhanced due diligence review completed 14 January 2026 demonstrated no material risk indicators.&rdquo;</li>
+        <li><strong>Regulatory or policy basis</strong> &mdash; the specific rule, policy, or framework under which the decision was made. This demonstrates that the decision was grounded in the applicable regulatory context, not made in isolation.</li>
+        <li><strong>Alternatives considered</strong> &mdash; what other courses of action were available and why they were not chosen. This is the field most frequently absent from email-based records and most frequently requested by audit functions.</li>
+        <li><strong>Confidence level</strong> &mdash; a 1&ndash;10 rating of the decision-maker&rsquo;s confidence at the time of the decision. This is the field that demonstrates systematic due diligence: it shows that uncertainty was acknowledged and managed, not ignored.</li>
+        <li><strong>Situational context</strong> &mdash; what else was happening that affected the decision. Time pressure, incomplete information, competing priorities, or unusual market conditions that explain why the decision was made in the way it was.</li>
+        <li><strong>Outcome review date</strong> &mdash; when the decision will be reviewed to assess whether the expected outcome was achieved. This demonstrates a closed-loop approach to compliance governance and creates the basis for systematic learning.</li>
+      </ul>
+
+      <h2>The Compliance Decision Log Template</h2>
+
+      <div class="example-box">
+        <h4>Template: Compliance Decision Record</h4>
+        <p style="margin: 0 0 8px; font-size: 0.95rem; color: var(--text-secondary);"><strong>Decision:</strong> [State exactly what was decided, in specific and verifiable terms]</p>
+        <p style="margin: 0 0 8px; font-size: 0.95rem; color: var(--text-secondary);"><strong>Date:</strong> [Date of decision] &nbsp;&nbsp; <strong>Decision-maker:</strong> [Name and role]</p>
+        <p style="margin: 0 0 8px; font-size: 0.95rem; color: var(--text-secondary);"><strong>Regulatory basis:</strong> [Specific rule, policy, or framework. E.g., FCA SYSC 4.1.1R; internal AML Policy v3.2 section 7.4]</p>
+        <p style="margin: 0 0 8px; font-size: 0.95rem; color: var(--text-secondary);"><strong>Alternatives considered:</strong> [List 2&ndash;3 alternatives and a one-sentence reason each was rejected]</p>
+        <p style="margin: 0 0 8px; font-size: 0.95rem; color: var(--text-secondary);"><strong>Confidence level:</strong> [1&ndash;10] &nbsp;&nbsp; <strong>Rationale for confidence rating:</strong> [Brief explanation]</p>
+        <p style="margin: 0 0 8px; font-size: 0.95rem; color: var(--text-secondary);"><strong>Situational context:</strong> [What else was happening that affected this decision]</p>
+        <p style="margin: 0; font-size: 0.95rem; color: var(--text-secondary);"><strong>Outcome review date:</strong> [When will you assess whether this decision achieved its intended effect]</p>
+      </div>
+
+      <h2>The Decision Types That Must Be Logged</h2>
+
+      <p>Not every routine compliance task warrants a decision log. The decision categories where structured documentation creates the most value &mdash; and where its absence creates the most exposure &mdash; are:</p>
+
+      <ul>
+        <li><strong>Regulatory breach responses</strong> &mdash; decisions about how to respond to a potential or confirmed breach. The rationale for the chosen remediation approach and the alternatives considered are exactly what a supervisory review will examine.</li>
+        <li><strong>Sanctions screening exceptions</strong> &mdash; decisions to approve a transaction that triggered a screening flag. The contemporaneous record of the evidence reviewed and the reasoning applied is the defence against subsequent scrutiny.</li>
+        <li><strong>Risk acceptance decisions</strong> &mdash; formal decisions to accept a known risk rather than mitigate or transfer it. Without a structured log, these decisions are invisible in the audit record.</li>
+        <li><strong>Significant policy interpretations</strong> &mdash; decisions about how to apply policy to situations not clearly covered by existing guidance. The reasoning on these decisions is often the most valuable thing to capture and the hardest to reconstruct.</li>
+        <li><strong>Third-party risk acceptances</strong> &mdash; decisions to onboard or continue with a supplier or counterparty despite identified risks. The outcome review on these decisions often reveals patterns in how third-party risk is managed.</li>
+      </ul>
+
+      <h2>Embedding the Practice Without Adding Burden</h2>
+
+      <p>The most common objection to compliance decision logging is time. Senior compliance professionals are already operating at capacity. Adding a documentation step to every decision feels like the last thing a stretched function needs.</p>
+
+      <p>The answer is structure over volume. A well-designed decision log takes 3&ndash;5 minutes per decision when the template is simple and the fields are clear. The return on that investment &mdash; in regulatory defensibility, post-incident clarity, and accumulated institutional knowledge &mdash; compounds significantly over 12&ndash;18 months of consistent practice.</p>
+
+      <p>The key is using a dedicated tool rather than a spreadsheet or document. When decision logging is embedded in the compliance workflow rather than treated as a separate exercise, the friction drops to near zero and the completion rate rises correspondingly.</p>
+
+      <div style="margin-top: 48px; margin-bottom: 40px; padding: 24px; background: var(--surface-warm); border: 1px solid var(--border); border-radius: var(--radius-md);">
+        <h4 style="margin: 0 0 16px; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); font-weight: 600;">Related reading</h4>
+        <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px;">
+          <li><a href="/use-cases/legal-and-compliance" style="color: var(--text-primary); text-decoration: none; font-size: 0.95rem; font-weight: 500;">Decision intelligence for legal and compliance teams &rarr;</a></li>
+          <li><a href="/blog/regulatory-decision-framework" style="color: var(--text-primary); text-decoration: none; font-size: 0.95rem; font-weight: 500;">Building a regulatory decision framework &rarr;</a></li>
+          <li><a href="/blog/audit-trail-software-for-decisions" style="color: var(--text-primary); text-decoration: none; font-size: 0.95rem; font-weight: 500;">Audit trail software for decision-making &rarr;</a></li>
+          <li><a href="/blog/decision-log-template" style="color: var(--text-primary); text-decoration: none; font-size: 0.95rem; font-weight: 500;">Decision log template: 8 essential fields &rarr;</a></li>
+          <li><a href="/security" style="color: var(--text-primary); text-decoration: none; font-size: 0.95rem; font-weight: 500;">Reflect OS security and encryption &rarr;</a></li>
+        </ul>
+      </div>
+
+      <div class="blog-cta">
+        <h3>Put this into practice with Reflect OS</h3>
+        <p>Reflect OS gives compliance teams a structured decision logging system with all six essential fields, automatic outcome review reminders, and encrypted storage that protects sensitive regulatory data. 90-day money-back guarantee.</p>
+        <a href="https://app.reflect-os.com/signup" class="cta-button">Get started &mdash; 90-day guarantee</a>
+      </div>
+
+      <div class="faq-section">
+        <h2>Frequently asked questions</h2>
+        <div class="faq-item">
+          <h3>What is a compliance decision log?</h3>
+          <p>A compliance decision log is a structured record of significant regulatory and compliance decisions that captures not just the outcome but the rationale behind it, the alternatives considered, the confidence level at the time, and the contextual circumstances. Its purpose is to create a contemporaneous, defensible record that can satisfy regulatory inquiry, audit review, or post-incident scrutiny.</p>
+        </div>
+        <div class="faq-item">
+          <h3>What should a compliance decision log include?</h3>
+          <p>A compliance decision log should include: the decision itself stated precisely, the date and decision-maker, the regulatory or policy basis for the decision, the alternatives considered and why they were rejected, the confidence level in the decision at the time it was made, any situational context that affected the decision, and scheduled outcome reviews to assess whether the decision achieved its intended effect.</p>
+        </div>
+        <div class="faq-item">
+          <h3>Is a compliance decision log a legal requirement?</h3>
+          <p>A compliance decision log is not universally mandated by name, but the FCA Senior Managers and Certification Regime, SEC examination standards, and most internal audit frameworks require that significant decisions can be traced to documented rationale made at the time. A structured decision log is the most reliable way to satisfy this requirement.</p>
+        </div>
+        <div class="faq-item">
+          <h3>How does Reflect OS support compliance decision logging?</h3>
+          <p>Reflect OS provides a structured decision logging system with dedicated fields for rationale, alternatives considered, confidence level, and situational context. Every decision is timestamped at creation. Shareable decision briefs can be generated for regulatory inquiries via secure expiring links, and all data is encrypted at rest using AES-256.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="footer"><div class="container"><div class="footer-grid"><div><div class="footer-brand">Reflect OS</div><p class="footer-desc">Decision intelligence for high-stakes teams.</p></div><div class="footer-col"><h5>Product</h5><ul class="footer-links"><li><a href="/product">Overview</a></li><li><a href="/how-it-works">How it works</a></li><li><a href="/pricing">Pricing</a></li></ul></div><div class="footer-col"><h5>Company</h5><ul class="footer-links"><li><a href="/about">About</a></li><li><a href="/contact">Contact</a></li><li><a href="/privacy">Privacy</a></li></ul></div></div><p class="footer-guarantee">90-day money-back guarantee on all plans.</p>
+    <div class="footer-bottom"><span>&copy; 2026 Reflect OS.</span><div class="footer-legal"><a href="/privacy">Privacy</a><a href="/terms">Terms</a></div></div></div></footer>
+<script>
+function toggleNav(btn) {
+  const expanded = btn.getAttribute('aria-expanded') === 'true';
+  btn.setAttribute('aria-expanded', String(!expanded));
+  const links = document.querySelector('.nav-links');
+  if (links) links.classList.toggle('open');
+}
+document.addEventListener('click', function(e) {
+  const links = document.querySelector('.nav-links');
+  const toggle = document.querySelector('.nav-hamburger');
+  if (links && links.classList.contains('open') && toggle && !toggle.contains(e.target) && !links.contains(e.target)) {
+    links.classList.remove('open');
+    toggle.setAttribute('aria-expanded', 'false');
+  }
+});
+</script>
+</body>
+</html>
